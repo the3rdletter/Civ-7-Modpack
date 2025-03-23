@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="no_in_game_2k_icon" version="1"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>No In-Game 2K Icon</Name>
+		<Description>Removes the in-game 2K icon from the top right corner of the screen.
+		You can still click the space where the icon would be and check the tooltip if needed.</Description>
+		<Authors>Conexion</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	</Properties>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="game-no-in-game-2k-icon-always" scope="game" criteria="always">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<Actions>
+				<ImportFiles>
+					<Item>ui/system-bar/panel-system-bar.js</Item>
+				</ImportFiles>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+</Mod>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="jnr-better-bridges" version="2"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>Better Bridges</Name>
+		<Description>Bridges can be built in Towns, continue to function as bridges in the next age, and upgrade automatically. Medieval and Modern Bridges have a Gold adjacency yield from quarters.</Description>
+		<Authors>JNR</Authors>
+		<Package>Mod</Package>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+		<Criteria id="antiquity-age-current">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+		</Criteria>
+		<Criteria id="exploration-age-current">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+		</Criteria>
+		<Criteria id="modern-age-current">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="base-game-main" scope="game" criteria="always">
+			<Properties>
+				<LoadOrder>13</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateText>
+					<Item>text/ConstructibleText.sql</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="age-antiquity-main" scope="game" criteria="antiquity-age-current">
+			<Properties>
+				<LoadOrder>13</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/constructibles-ant.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="age-exploration-main" scope="game" criteria="exploration-age-current">
+			<Properties>
+				<LoadOrder>13</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/constructibles-exp.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="age-modern-main" scope="game" criteria="modern-age-current">
+			<Properties>
+				<LoadOrder>13</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/constructibles-mod.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+</Mod>

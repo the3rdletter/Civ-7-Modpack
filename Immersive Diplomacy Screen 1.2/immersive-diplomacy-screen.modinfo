@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="cyberdisc-immersive-diplomacy-screen" version="1.2"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_IMMERSIVE_DIPLOMACY_SCREEN_NAME</Name>
+		<Description>LOC_IMMERSIVE_DIPLOMACY_SCREEN_DESCRIPTION</Description>
+		<Authors>Cyberdisc</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="immersive-diplomacy-screen" scope="game" criteria="always">
+			<Actions>
+				<ImportFiles>
+					<Item>ui/diplomacy/leader-model-manager.js</Item>
+				</ImportFiles>
+				<ReplaceUIScript>
+					<Item>ui/diplomacy/leader-model-manager.js</Item>
+				</ReplaceUIScript>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ModuleText.xml</File>
+	</LocalizedText>
+</Mod>

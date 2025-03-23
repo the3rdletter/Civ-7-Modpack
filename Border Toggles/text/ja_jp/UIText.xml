@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <LocalizedText>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_BORDERS" Language="ja_JP">
+			<Text>Civ Border</Text>
+		</Replace>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_CITY_BORDERS" Language="ja_JP">
+			<Text>City Border</Text>
+		</Replace>
+    </LocalizedText>
+</Database>

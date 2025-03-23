@@ -1,0 +1,22 @@
+v 1.13
+- Update for compatibility with base game 1.1.0 patch
+- Improve discovery lens to update in fog of war (as this is consistent with how the tile constructible is visible)
+
+v 1.12
+- Update how the mini map lens checkbox is added to not require replacing the mini-map panel class to avoid conflicts with other mods.
+- Update discovery logic to no longer provide information not avaialable to the player (resets fog of war discovery icons on load)
+- Add repair category to the production screen.
+- Fix base game bug where repairing items doesn't cause the production UI to correctly remove no longer valid repair items.
+
+v 1.11
+- Fixed some logic on when to remove discoverable icons. Should now only be removed when the now empty tile is visible to you.
+
+v 1.0
+- Initial Release
+- Fixed in the base game resources that are added during gameplay (e.g. discovery events) not showing up as resource icons.
+- Added gold border around resources that produce treasure fleets in the exploration age in the resource map layer.
+- Added a discovery map layer to show icons above discoverables (goody huts).
+- The resource screen now sorts all resources.
+- The resource screen sorts cities first and then by number of available resource slots.
+- Added ultra wide screen support for the resource screen. Cities now display in two columns.
+- When placing a unique building that could complete a unique quarter highlight the hex that will complete it in purple.

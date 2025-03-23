@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="MLK_EnhancedTownFocusInfo" version="1.1.0"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_MOD_MLK_ENHANCEDTOWNFOCUSINFO</Name>
+		<Description>LOC_MOD_MLK_ENHANCEDTOWNFOCUSINFO_DESCRIPTION</Description>
+		<Authors>Mallek (Based on original work by Yamada)</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+	</Dependencies>
+	<Files>
+		<File>script/EnhancedTownFocusInfo.js</File>
+		<File>text/ETFI_Text.sql</File>
+		<File>text/en_us/ModuleText.xml</File>
+		<File>text/ja_JP/ModuleText.xml</File>
+		<File>text/it_IT/ModuleText.xml</File>
+		<File>text/ru_RU/ModuleText.xml</File>
+	</Files>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet/>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="enhanced-town-focus-info-actions" scope="game" criteria="always">
+			<Actions>
+				<UpdateText>
+					<Item>text/ETFI_Text.sql</Item>
+				</UpdateText>
+				<UIScripts>
+					<Item>script/EnhancedTownFocusInfo.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ModuleText.xml</File>
+		<File>text/ja_JP/ModuleText.xml</File>
+		<File>text/it_IT/ModuleText.xml</File>
+		<File>text/ru_RU/ModuleText.xml</File>
+	</LocalizedText>
+</Mod> 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="YMD_AutoRepair" version="1.1"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_MOD_YMD_AUTOREPAIR</Name>
+		<Description>LOC_MOD_YMD_AUTOREPAIR_DESCRIPTION</Description>
+		<Authors>Yamada</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet/>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="auto-repair-actions" scope="game" criteria="always">
+			<Actions>
+				<UIScripts>
+					<Item>script/AutoRepair.js</Item>
+				</UIScripts>
+				<UpdateText>
+					<Item>text/en_us/ModuleText.xml</Item>
+					<Item locale="ja_JP">l10n/ja_JP_Text.xml</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ModuleText.xml</File>
+		<File>l10n/ja_JP_Text.xml</File>
+	</LocalizedText>
+</Mod>

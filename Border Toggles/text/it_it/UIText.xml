@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <LocalizedText>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_BORDERS" Language="it_IT">
+			<Text>Confini civiltà</Text>
+		</Replace>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_CITY_BORDERS" Language="it_IT">
+			<Text>Confini città</Text>
+		</Replace>
+    </LocalizedText>
+</Database>

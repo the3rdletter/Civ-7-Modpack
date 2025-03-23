@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_LAST_PRODUCED_ITEM">
+			<Text>Completed: {1_last_produced_item}</Text>
+		</Row>
+    </EnglishText>
+</Database>

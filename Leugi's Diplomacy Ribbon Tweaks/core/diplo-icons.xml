@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Database>
+  <IconDefinitions>
+    <Row>
+      <ID>PLAYER_RELATIONSHIP_NEUTRAL</ID>
+      <Path>fs://game/leugi-diploribbon-tweaks/Icons/leu_dip_neutral.png</Path>
+    </Row>
+	<Replace>
+      <ID>PLAYER_RELATIONSHIP_HOSTILE</ID>
+      <Path>fs://game/leugi-diploribbon-tweaks/Icons/leu_dip_hostile.png</Path>
+    </Replace>
+	<Replace>
+      <ID>PLAYER_RELATIONSHIP_UNFRIENDLY</ID>
+      <Path>fs://game/leugi-diploribbon-tweaks/Icons/leu_dip_unfriendly.png</Path>
+    </Replace>
+    <Replace>
+      <ID>PLAYER_RELATIONSHIP_FRIENDLY</ID>
+      <Path>fs://game/leugi-diploribbon-tweaks/Icons/leu_dip_friendly.png</Path>
+    </Replace>
+    <Replace>
+      <ID>PLAYER_RELATIONSHIP_HELPFUL</ID>
+      <Path>fs://game/leugi-diploribbon-tweaks/Icons/leu_dip_helpful.png</Path>
+    </Replace>
+    <Replace>
+      <ID>PLAYER_RELATIONSHIP_AT_WAR</ID>
+      <Path>fs://game/leugi-diploribbon-tweaks/Icons/leu_dip_war.png</Path>
+    </Replace>
+    <Replace>
+      <ID>PLAYER_RELATIONSHIP_ALLIANCE</ID>
+      <Path>fs://game/leugi-diploribbon-tweaks/Icons/leu_dip_alliance.png</Path>
+    </Replace>
+  </IconDefinitions>
+</Database>

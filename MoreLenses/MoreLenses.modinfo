@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="blos_ross_more_lenses" version="0.2.2"
+    xmlns="ModInfo">
+    <Properties>
+        <Name>More Lenses</Name>
+        <Description>Implements a trade lens.</Description>
+        <Authors>Blob Ross</Authors>
+        <Package>Mod</Package>
+        <AffectsSavedGames>0</AffectsSavedGames>
+    </Properties>
+    <Dependencies>
+        <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+    </Dependencies>
+    <ActionCriteria>
+        <Criteria id="always">
+            <AlwaysMet></AlwaysMet>
+        </Criteria>
+    </ActionCriteria>
+    <ActionGroups>
+        <ActionGroup id="game-more-lens-always" scope="game" criteria="always">
+            <Actions>
+                <ImportFiles>
+                    <Item>ui/trade-route-chooser/trade-route-chooser.js</Item>
+                </ImportFiles>
+                <UIScripts>
+                    <Item>ui/utilities/trade-lens-panel-mini-map.js</Item>
+                </UIScripts>
+            </Actions>
+        </ActionGroup>
+    </ActionGroups>
+</Mod>

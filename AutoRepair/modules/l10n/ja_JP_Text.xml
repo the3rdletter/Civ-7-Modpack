@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Replace Tag="LOC_MOD_YMD_AUTOREPAIR" Language="ja_JP">
+		<Text>Auto Repair(自動で修理)</Text>
+	</Replace>
+	<Replace Tag="LOC_MOD_YMD_AUTOREPAIR_DESCRIPTION" Language="ja_JP">
+		<Text>災害等で壊れた建造物や改善を、ターン開始時に自動で修理する</Text>
+	</Replace>
+	<Replace Tag="LOC_MOD_YMD_AUTOREPAIR_SETTING_1" Language="ja_JP">
+		<Text>自動修復を有効化</Text>
+	</Replace>
+	<Replace Tag="LOC_MOD_YMD_DIALOG_TITLE" Language="ja_JP">
+		<Text>自動修理設定</Text>
+	</Replace>
+	<Replace Tag="LOC_MOD_YMD_REPAIR_EXECUTED" Language="ja_JP">
+		<Text>修復を実行しました。</Text>
+	</Replace>
+	<Replace Tag="LOC_MOD_YMD_All_REPAIR" Language="ja_JP">
+		<Text>すべて修理</Text>
+	</Replace>
+	<Replace Tag="LOC_MOD_YMD_REPAIR_SETTINGS" Language="ja_JP">
+		<Text>設定</Text>
+	</Replace>
+  </LocalizedText>
+</Database>
