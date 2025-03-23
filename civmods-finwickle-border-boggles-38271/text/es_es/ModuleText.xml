@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_NAME" Language="es_ES">
+			<Text>Border Toggles</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_DESCRIPTION" Language="es_ES">
+			<Text>Agrega botones para mostrar u ocultar los límites de las civilizaciones y de las ciudades. Los límites de las ciudades muestran qué casilla pertenece a qué ciudad, en el caso de ciudades cercanas entre sí.
+			</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_SPECIALTHANKS" Language="es_ES">
+			<Text>Borush96, F1rstDan, Gusjeon, iBlockZer0, leonardify, Somchai2548 y Webrok para traducciones.</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_COMPATIBILITY" Language="es_ES">
+			<Text>Esto debería ser compatible con todos los demás mods actualizados.</Text>
+		</Row>
+	</LocalizedText>
+</Database>

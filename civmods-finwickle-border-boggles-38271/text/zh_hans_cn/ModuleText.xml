@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_NAME" Language="zh_Hans_CN">
+			<Text>Border Toggles</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>添加 显示/隐藏 文明边界和城市边界的切换选项。对于彼此距离较近的城市，城市边界会显示出哪个地块属于哪个城市。
+			</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_SPECIALTHANKS" Language="zh_Hans_CN">
+			<Text>Borush96, F1rstDan, iBlockZer0, leonardify, Somchai2548 和 Webrok 用于本地化。</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_COMPATIBILITY" Language="zh_Hans_CN">
+			<Text>本模组应该兼容所有其他已更新的模组。</Text>
+		</Row>
+	</LocalizedText>
+</Database>

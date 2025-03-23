@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_NAME" Language="pl_PL">
+			<Text>Border Toggles</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_DESCRIPTION" Language="pl_PL">
+			<Text>Dodaje filtry do pokazania/ukrycia granic cywilizacji i miast. Granice miast pokazują które pola należą do którego miasta, dla miast sąsiadujących ze sobą.
+			</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_SPECIALTHANKS" Language="pl_PL">
+			<Text>Borush96, F1rstDan, Gusjeon, iBlockZer0, leonardify, Somchai2548 i Webrok za tłumaczenia.</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_COMPATIBILITY" Language="pl_PL">
+			<Text>Ten mod powinien być kompatybilny z resztą aktualnych modów.</Text>
+		</Row>
+	</LocalizedText>
+</Database>

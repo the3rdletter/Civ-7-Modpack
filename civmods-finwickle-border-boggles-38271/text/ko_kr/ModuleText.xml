@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_NAME" Language="ko_KR">
+			<Text>Border Toggles</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_DESCRIPTION" Language="ko_KR">
+			<Text>문명 경계와 도시 경계를 표시/숨기기 하기 위한 단추를 추가합니다. 도시 경계는 서로 가까운 도시의 타일이 어느 도시에 속하는지 보여줍니다.
+			</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_SPECIALTHANKS" Language="ko_KR">
+			<Text>현지화 작업을 도와준 Borush96, F1rstDan, Gusjeon, iBlockZer0, leonardify, Somchai2548 그리고 Webrok.</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_COMPATIBILITY" Language="ko_KR">
+			<Text>이 모드는 다른 모든 업데이트된 모드와 호환되어야 합니다.</Text>
+		</Row>
+	</LocalizedText>
+</Database>
