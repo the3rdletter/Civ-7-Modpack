@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- UUPrefix_ModPackText -->
+<!-- Author: Flactine -->
+<!-- DateCreated: 3/26/2025 10:10:34 AM -->
+<GameData>
+	<EnglishText>
+		<Row Tag="LOC_MOD_FLAC_UUPREFIX_NAME">
+			<Text>Unique Unit Upgrade Prefixes</Text>
+		</Row>
+		<Row Tag="LOC_MOD_FLAC_UUPREFIX_AUTHOR">
+			<Text>Flactine</Text>
+		</Row>
+		<Row Tag="LOC_MOD_FLAC_UUPREFIX_DESCRIPTION">
+			<Text>Add upgrade prefixes to Unique Units, similar to the system in Age of Empires III.</Text>
+		</Row>
+	</EnglishText>
+</GameData>

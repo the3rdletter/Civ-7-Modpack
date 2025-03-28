@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <EnglishText>
+		<!--Prefix-->
+        <Row Tag="LOC_FLACS_PREFIX_EUROPE_2">
+            <Text>Guard</Text>
+        </Row>
+        <Row Tag="LOC_FLACS_PREFIX_EUROPE_3">
+            <Text>Imperial</Text>
+        </Row>
+        <Row Tag="LOC_FLACS_PREFIX_NATIVE_2">
+            <Text>Champion</Text>
+        </Row>
+        <Row Tag="LOC_FLACS_PREFIX_NATIVE_3">
+            <Text>Legendary</Text>
+        </Row>
+        <Row Tag="LOC_FLACS_PREFIX_ASIAN_2">
+            <Text>Honored</Text>
+        </Row>
+        <Row Tag="LOC_FLACS_PREFIX_ASIAN_3">
+            <Text>Exalted</Text>
+        </Row>
+        <Row Tag="LOC_FLACS_PREFIX_SPECIAL_2">
+            <Text>Elite</Text>
+        </Row>
+        <Row Tag="LOC_FLACS_PREFIX_SPECIAL_3">
+            <Text>Supreme</Text>
+        </Row>
+		<!--Era 1-->
+		<Row Tag="LOC_UNIT_BURNING_ARROW_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_BURNING_ARROW_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_DANTINAS_TATHA_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_DANTINAS_TATHA_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_DHOW_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_DHOW_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_HOPLITE_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_HOPLITE_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_HOPLITE_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_3} {LOC_UNIT_HOPLITE_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_HULCHE_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_HULCHE_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_IMMORTAL_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_IMMORTAL_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_LEGION_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_LEGION_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_MEDJAY_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_NATIVE_2} {LOC_UNIT_MEDJAY_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_MEDJAY_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_NATIVE_3} {LOC_UNIT_MEDJAY_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_NU_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_NU_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_PURABHETTARAH_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_PURABHETTARAH_NAME}</Text>
+		</Row>
+		
+		<!--Era 2-->
+		<Row Tag="LOC_UNIT_CETBANG_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_ASIAN_2} {LOC_UNIT_CETBANG_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_CETBANG_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_ASIAN_3} {LOC_UNIT_CETBANG_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_CHEVALER_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_EUROPE_2} {LOC_UNIT_CHEVALER_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_CHEVALER_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_EUROPE_3} {LOC_UNIT_CHEVALER_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_GOLD_BANGLES_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_NATIVE_2} {LOC_UNIT_GOLD_BANGLES_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_GOLD_BANGLES_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_NATIVE_3} {LOC_UNIT_GOLD_BANGLES_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_KALAM_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_ASIAN_2} {LOC_UNIT_KALAM_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_KALAM_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_ASIAN_3} {LOC_UNIT_KALAM_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_KESHIG_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_ASIAN_2} {LOC_UNIT_KESHIG_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_KESHIG_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_ASIAN_3} {LOC_UNIT_KESHIG_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_LEIOMANO_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_NATIVE_2} {LOC_UNIT_LEIOMANO_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_LEIOMANO_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_NATIVE_3} {LOC_UNIT_LEIOMANO_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_MAMLUK_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_EUROPE_2} {LOC_UNIT_MAMLUK_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_MAMLUK_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_EUROPE_3} {LOC_UNIT_MAMLUK_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_TERCIO_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_EUROPE_2} {LOC_UNIT_TERCIO_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_TERCIO_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_EUROPE_3} {LOC_UNIT_TERCIO_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_WARAKAQ_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_NATIVE_2} {LOC_UNIT_WARAKAQ_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_WARAKAQ_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_NATIVE_3} {LOC_UNIT_WARAKAQ_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_XUNLEICHONG_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_ASIAN_2} {LOC_UNIT_XUNLEICHONG_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_XUNLEICHONG_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_ASIAN_3} {LOC_UNIT_XUNLEICHONG_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_CORSAIR_2_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_CORSAIR_NAME}</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_CORSAIR_3_NAME">
+			<Text>{LOC_FLACS_PREFIX_SPECIAL_3} {LOC_UNIT_CORSAIR_NAME}</Text>
+		</Row>
+		
+		<!--Era 3-->
+		<Row Tag="LOC_UNIT_ABAMBOWA_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_NATIVE_2} {LOC_UNIT_ABAMBOWA_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_ABAMBOWA_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_NATIVE_3} {LOC_UNIT_ABAMBOWA_NAME}</Text>
+        </Row>
+		<Row Tag="LOC_UNIT_CHANG_BEUN_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_ASIAN_2} {LOC_UNIT_CHANG_BEUN_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_CHANG_BEUN_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_ASIAN_3} {LOC_UNIT_CHANG_BEUN_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_COSSACK_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_EUROPE_2} {LOC_UNIT_COSSACK_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_COSSACK_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_EUROPE_3} {LOC_UNIT_COSSACK_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_GARDE_IMPERIALE_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_GARDE_IMPERIALE_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_GARDE_IMPERIALE_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_SPECIAL_3} {LOC_UNIT_GARDE_IMPERIALE_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_HUSSAR_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_EUROPE_2} {LOC_UNIT_HUSSAR_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_HUSSAR_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_EUROPE_3} {LOC_UNIT_HUSSAR_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_GUSA_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_ASIAN_2} {LOC_UNIT_GUSA_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_GUSA_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_ASIAN_3} {LOC_UNIT_GUSA_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_KATYUSHA_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_KATYUSHA_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_MARINE_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_MARINE_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_MIKASA_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_MIKASA_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_SEPOY_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_ASIAN_2} {LOC_UNIT_SEPOY_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_SEPOY_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_ASIAN_3} {LOC_UNIT_SEPOY_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_SOLDADERAS_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_EUROPE_2} {LOC_UNIT_SOLDADERAS_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_SOLDADERAS_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_EUROPE_3} {LOC_UNIT_SOLDADERAS_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_STUKA_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_STUKA_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_ZERO_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_ZERO_NAME}</Text>
+        </Row>
+		
+		<!--DLC-->
+		
+		<Row Tag="LOC_UNIT_BOYAR_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_EUROPE_2} {LOC_UNIT_BOYAR_NAME}</Text>
+        </Row>
+		<Row Tag="LOC_UNIT_BOYAR_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_EUROPE_3} {LOC_UNIT_BOYAR_NAME}</Text>
+        </Row>
+		
+		<Row Tag="LOC_UNIT_NUMIDIAN_CAVALRY_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_SPECIAL_2} {LOC_UNIT_NUMIDIAN_CAVALRY_NAME}</Text>
+        </Row>
+		<Row Tag="LOC_UNIT_NUMIDIAN_CAVALRY_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_SPECIAL_3} {LOC_UNIT_NUMIDIAN_CAVALRY_NAME}</Text>
+        </Row>
+		
+		<Row Tag="LOC_UNIT_REVENGE_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_EUROPE_2} {LOC_UNIT_REVENGE_NAME}</Text>
+        </Row>
+		<Row Tag="LOC_UNIT_REVENGE_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_EUROPE_3} {LOC_UNIT_REVENGE_NAME}</Text>
+        </Row>
+		
+		<Row Tag="LOC_UNIT_GURKHA_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_ASIAN_2} {LOC_UNIT_GURKHA_NAME}</Text>
+        </Row>
+		<Row Tag="LOC_UNIT_GURKHA_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_ASIAN_3} {LOC_UNIT_GURKHA_NAME}</Text>
+        </Row>
+		
+		<Row Tag="LOC_UNIT_KISPOKO_NENA_TO_2_NAME">
+            <Text>{LOC_FLACS_PREFIX_NATIVE_2} {LOC_UNIT_KISPOKO_NENA_TO_NAME}</Text>
+        </Row>
+		<Row Tag="LOC_UNIT_KISPOKO_NENA_TO_3_NAME">
+            <Text>{LOC_FLACS_PREFIX_NATIVE_3} {LOC_UNIT_KISPOKO_NENA_TO_NAME}</Text>
+        </Row>
+    </EnglishText>
+</Database>

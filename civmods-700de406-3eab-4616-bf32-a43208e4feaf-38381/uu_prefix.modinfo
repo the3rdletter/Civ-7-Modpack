@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="700de406-3eab-4616-bf32-a43208e4feaf" version="1" xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_MOD_FLAC_UUPREFIX_NAME</Name>
+		<Description>LOC_MOD_FLAC_UUPREFIX_DESCRIPTION</Description>
+		<Authors>LOC_MOD_FLAC_UUPREFIX_AUTHOR</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet/>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="base-game-main" scope="game" criteria="always">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/UU_Prefix.sql</Item>
+				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/Text_Main.xml</Item>
+					<Item>text/en_us/ModuleText.xml</Item>
+					<Item locale="zh_Hans_CN">l10n/Text_Prefix_CN.xml</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<Item>text/en_us/ModuleText.xml</Item>
+        <File>l10n/ModuleText.xml</File>
+	</LocalizedText>
+</Mod>

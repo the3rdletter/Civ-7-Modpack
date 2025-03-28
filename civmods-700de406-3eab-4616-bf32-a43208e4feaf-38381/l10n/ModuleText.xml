@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- UUPrefix_ModPackText -->
+<!-- Author: Flactine -->
+<!-- DateCreated: 3/26/2025 10:10:34 AM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_MOD_FLAC_UUPREFIX_NAME" Language="zh_Hans_CN">
+			<Text>特色单位升级头衔</Text>
+		</Replace>
+		<Replace Tag="LOC_MOD_FLAC_UUPREFIX_AUTHOR" Language="zh_Hans_CN">
+			<Text>焰色光芒</Text>
+		</Replace>
+		<Replace Tag="LOC_MOD_FLAC_UUPREFIX_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>为晋升后的二级，三级特色单位添加前缀，类似于《帝国时代3》。</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
