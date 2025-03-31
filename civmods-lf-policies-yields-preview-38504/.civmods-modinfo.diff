@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -8,12 +8,6 @@
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+ 		<Version>1.0.1</Version>
+ 		<URL>https://forums.civfanatics.com/resources/leonardfactorys-policy-yield-previews.32012/</URL>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>f52ss084uwh9f66</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/leonardfactorys-policy-yield-previews.32012/</CivModsURL>
+-	<CivModsVersion>1.0.2</CivModsVersion>
+-	<CivModsVersionDate>2025-03-30T23:13:12.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />

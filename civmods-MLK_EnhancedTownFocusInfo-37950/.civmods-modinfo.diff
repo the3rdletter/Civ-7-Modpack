@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -7,12 +7,6 @@
+ 		<Authors>Mallek (Based on original work by Yamada)</Authors>
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>12cu0400xa6wcf9</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/enhanced-town-focus-info.31969/</CivModsURL>
+-	<CivModsVersion>1.1.9: Korean Localization Update</CivModsVersion>
+-	<CivModsVersionDate>2025-03-06T14:59:33.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />

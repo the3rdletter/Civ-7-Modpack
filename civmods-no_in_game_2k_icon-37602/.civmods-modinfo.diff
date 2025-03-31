@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -8,12 +8,6 @@
+ 		<Authors>Conexion</Authors>
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>z39o2th9294527k</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/no-in-game-2k-icon.31921/</CivModsURL>
+-	<CivModsVersion>1.0</CivModsVersion>
+-	<CivModsVersionDate>2025-02-15T20:00:52.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<ActionCriteria>
+ 		<Criteria id="always">

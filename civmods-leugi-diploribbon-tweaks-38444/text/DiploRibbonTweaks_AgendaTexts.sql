@@ -1,0 +1,18 @@
+UPDATE LocalizedText
+SET Text = '[icon:LEU_BULLET_NEGATIVE]'||Text
+WHERE Tag = "LOC_DIPLOMACY_AGENDA_DUSHA_DESC";
+
+UPDATE LocalizedText
+SET Text = replace(Text, ". ", ".[N][icon:LEU_BULLET_POSITIVE]")
+WHERE Tag = "LOC_DIPLOMACY_AGENDA_DUSHA_DESC";
+
+
+
+UPDATE LocalizedText
+SET Text = '[icon:LEU_BULLET_POSITIVE]'||Text
+WHERE Tag LIKE '%AGENDA%DESC' AND Tag != "LOC_DIPLOMACY_AGENDA_DUSHA_DESC";
+
+UPDATE LocalizedText
+SET Text = replace(Text, ". ", ".[N][icon:LEU_BULLET_NEGATIVE]")
+WHERE Tag LIKE '%AGENDA%DESC' AND Tag != "LOC_DIPLOMACY_AGENDA_DUSHA_DESC";
+

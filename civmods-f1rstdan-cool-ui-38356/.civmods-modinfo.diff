@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -9,12 +9,6 @@
+         <URL>https://forums.civfanatics.com/resources/31961/</URL>
+         <Package>Mod</Package>
+         <AffectsSavedGames>0</AffectsSavedGames>
+-    <!-- Added automatically by CivMods: Do not edit -->
+-    <CivModsCategory>UI Mods</CivModsCategory>
+-    <CivModsInternalVersionId>7yxu20tda2autm9</CivModsInternalVersionId>
+-    <CivModsURL>https://forums.civfanatics.com/resources/f1rstdans-cool-ui-quick-buy-button-added.31961/</CivModsURL>
+-    <CivModsVersion>1.8.3</CivModsVersion>
+-    <CivModsVersionDate>2025-03-25T15:51:52.000Z</CivModsVersionDate>
+     </Properties>
+     <Dependencies>
+         <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />

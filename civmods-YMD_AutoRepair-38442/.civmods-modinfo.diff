@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -7,12 +7,6 @@
+ 		<Authors>Yamada</Authors>
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>1jl9s631o5qnj6q</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/auto-repair-restore-your-city-instantly.31936/</CivModsURL>
+-	<CivModsVersion>1.1.1</CivModsVersion>
+-	<CivModsVersionDate>2025-03-29T00:23:14.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
