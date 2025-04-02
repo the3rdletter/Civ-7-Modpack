@@ -10,13 +10,13 @@
 		<URL>LOC_MOD_TCS_IMPROVED_MOD_PAGE_URL</URL>
 		<Package>Mod</Package>
 		<AffectsSavedGames>0</AffectsSavedGames>
-		<Version>3</Version>
+		<Version>5</Version>
 	<!-- Added automatically by CivMods: Do not edit -->
 	<CivModsCategory>UI Mods</CivModsCategory>
-	<CivModsInternalVersionId>6wos86aejk93ep4</CivModsInternalVersionId>
+	<CivModsInternalVersionId>93g2w1ok4cnhwx8</CivModsInternalVersionId>
 	<CivModsURL>https://forums.civfanatics.com/resources/tcs-improved-mod-page.32024/</CivModsURL>
-	<CivModsVersion>3</CivModsVersion>
-	<CivModsVersionDate>2025-03-11T17:42:07.000Z</CivModsVersionDate>
+	<CivModsVersion>5</CivModsVersion>
+	<CivModsVersionDate>2025-04-01T12:57:40.000Z</CivModsVersionDate>
 	</Properties>
 	<Dependencies>
 	</Dependencies>
@@ -53,25 +53,36 @@
 					<Item>assets/tcs-ui-star.png</Item>
 					<Item>assets/tcs-ui-user.png</Item>
 					<Item>assets/tcs-ui-wrench.png</Item>
+					<Item>assets/civmods-logo.png</Item>
+					<Item>assets/tcs-ui-download.png</Item>
+					<Item>assets/tcs-ui-bookmark.png</Item>
+					<Item>assets/tcs-ui-view.png</Item>
+					<Item>assets/tcs-ui-search.png</Item>
 				</ImportFiles>
 				<UpdateIcons>
 					<Item>icons/icons.xml</Item>
 				</UpdateIcons>
 				<UpdateText>
 					<Item>text/en_us/ShellText.xml</Item>
+					<Item locale="pl_PL">text/pl_pl/ShellText.xml</Item>
 					<Item locale="pt_BR">text/pt_br/ShellText.xml</Item>
 					<Item locale="ko_KR">text/ko_kr/ShellText.xml</Item>
 					<Item locale="it_IT">text/it_it/ShellText.xml</Item>
 					<Item locale="ru_RU">text/ru_ru/ShellText.xml</Item>
+					<Item locale="zh_Hans_CN">text/zh_Hans_CN/ShellText.xml</Item>
+					<Item locale="zh_Hant_HK">text/zh_Hant_HK/ShellText.xml</Item>
 				</UpdateText>
 			</Actions>
 		</ActionGroup>
 	</ActionGroups>
 	<LocalizedText>
 		<File>text/en_us/ShellText.xml</File>
+		<File>text/pl_pl/ShellText.xml</File>
 		<File>text/pt_br/ShellText.xml</File>
 		<File>text/it_it/ShellText.xml</File>
 		<File>text/ko_kr/ShellText.xml</File>
 		<File>text/ru_ru/ShellText.xml</File>
+		<File>text/zh_Hans_CN/ShellText.xml</File>
+		<File>text/zh_Hant_HK/ShellText.xml</File>
 	</LocalizedText>
 </Mod>

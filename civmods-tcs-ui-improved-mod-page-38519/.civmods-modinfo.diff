@@ -3,13 +3,13 @@
 @@ -11,12 +11,6 @@
  		<Package>Mod</Package>
  		<AffectsSavedGames>0</AffectsSavedGames>
- 		<Version>3</Version>
+ 		<Version>5</Version>
 -	<!-- Added automatically by CivMods: Do not edit -->
 -	<CivModsCategory>UI Mods</CivModsCategory>
--	<CivModsInternalVersionId>6wos86aejk93ep4</CivModsInternalVersionId>
+-	<CivModsInternalVersionId>93g2w1ok4cnhwx8</CivModsInternalVersionId>
 -	<CivModsURL>https://forums.civfanatics.com/resources/tcs-improved-mod-page.32024/</CivModsURL>
--	<CivModsVersion>3</CivModsVersion>
--	<CivModsVersionDate>2025-03-11T17:42:07.000Z</CivModsVersionDate>
+-	<CivModsVersion>5</CivModsVersion>
+-	<CivModsVersionDate>2025-04-01T12:57:40.000Z</CivModsVersionDate>
  	</Properties>
  	<Dependencies>
  	</Dependencies>

@@ -1,5 +1,5 @@
 # TCS Improved Mod Page
-Official releases hosted on ![Civfanatics](https://forums.civfanatics.com/resources/tcs-improved-mod-page.32024/).
+Official releases hosted on [Civfanatics](https://forums.civfanatics.com/resources/tcs-improved-mod-page.32024/).
 
 ## Description
 Various improvements to the Mod page. This includes:
@@ -13,6 +13,9 @@ Various improvements to the Mod page. This includes:
 **Note:** These buttons will not toggle locked content or the TCS Improved Mod Page mod.
 
 ## Installation
+### Recommended
+It is recommended to use the [CivMods](https://civmods.com/install?modCfId=32024) manager.
+### Manual
 Extract to your Mods folder.
 * **Windows:** %localappdata%\Firaxis Games\Sid Meier's Civilization VII\Mods
 * **MacOS:** ~/Library/Application Support/Civilization VII/Mods

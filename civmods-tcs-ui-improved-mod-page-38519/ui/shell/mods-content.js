@@ -75,6 +75,9 @@ export class ModsContent extends Panel {
 		this.modId = MustGetElement('.mod-id', this.Root);
 		this.modCompatibilityText = MustGetElement('.mod-compatibility', this.Root);
 		this.modUrlText = MustGetElement('.mod-url', this.Root);
+        this.modCivModsText = MustGetElement('.mod-civmods', this.Root);
+        this.modCivModsVersionIdText = MustGetElement('.civmod-version-id', this.Root);
+        this.modCivModsCategoryText = MustGetElement('.civmod-category', this.Root);
 		this.modToggle = MustGetElement('.toggle-enable', this.Root);
         //this.modDependenciesContent = MustGetElement('.mod-dependencies', this.Root);
         this.renderModListContent();
@@ -122,6 +125,7 @@ export class ModsContent extends Panel {
 							<fxs-header class="selected-mod-name relative flex justify-center font-title text-xl uppercase mb-3"></fxs-header>
 							<p class="mod-author relative"></p>
 							<p class="mod-thanks hidden relative"></p>
+                            <p class="mod-civmods hidden relative"></p>
 							<fxs-header filigree-style="none"
 										class="mod-description-header relative flex text-lg uppercase mb-1 mt-6"
 										title="LOC_MOD_TCS_UI_DESCRIPTION_HEADER"></fxs-header>
@@ -146,6 +150,8 @@ export class ModsContent extends Panel {
 								<div class="relative justify-end pl-1 mr-1 w-1\\/2">
 									<p class="mod-official hidden"></p>
 									<p class="mod-unofficial hidden"></p>
+                                    <p class="civmod-category hidden"></p>
+                                    <p class="civmod-version-id hidden"></p>
 									<p class="mod-compatibility hidden"></p>
 								</div>
 							</fxs-hslot>
@@ -371,7 +377,7 @@ export class ModsContent extends Panel {
 		
 		// Version (hidden if not present)
 		// Currently only supports a custom Version property
-		const version = Modding.getModProperty(modInfo.handle, 'Version');
+		let version = (Modding.getModProperty(modInfo.handle, 'CivModsVersion')) ? Modding.getModProperty(modInfo.handle, 'CivModsVersion') : Modding.getModProperty(modInfo.handle, 'Version');
         if (version) {
 			this.modVersionText.classList.remove('hidden');
 			this.modVersionText.setAttribute('data-l10n-id', Locale.stylize("LOC_MOD_TCS_UI_VERSION", version));
@@ -409,9 +415,19 @@ export class ModsContent extends Panel {
 		}
 		
 		// Created date
-        if (modInfo.created) {
-			this.modDateText.setAttribute('data-l10n-id', Locale.stylize("LOC_MOD_TCS_UI_DATE_CREATED", modInfo.created));
+        const versionUpdateDate = (modInfo.created) ? (modInfo.created) : Modding.getModProperty(modInfo.handle, 'CivModsVersionDate');
+        if (versionUpdateDate) {
+            if (modInfo.created) {
+			    this.modDateText.setAttribute('data-l10n-id', Locale.stylize("LOC_MOD_TCS_UI_DATE_CREATED", modInfo.created));
+            }
+            else {
+                this.modDateText.setAttribute('data-l10n-id', Locale.stylize("LOC_MOD_TCS_UI_DATE_CREATED", versionUpdateDate.substring(0, 10)));
+            }
+            this.modDateText.classList.remove('hidden');
         }
+        else {
+			this.modDateText.classList.add('hidden');
+		}		
 		
 		// Affects Save Games
 		const affectsSaveGames = Modding.getModProperty(modInfo.handle, 'AffectsSavedGames');
@@ -449,9 +465,39 @@ export class ModsContent extends Panel {
 		else {
 			this.modCompatibilityText.classList.add('hidden');
 		}
+
+        // CivMods - Version Id --> only internal for now, not for public use
+        /*const modCivModsVersionId = Modding.getModProperty(modInfo.handle, 'CivModsInternalVersionId');
+        if (modCivModsVersionId) {
+            this.modCivModsVersionIdText.classList.remove('hidden');
+			this.modCivModsVersionIdText.setAttribute('data-l10n-id', Locale.stylize("LOC_MOD_TCS_UI_CIVMOD_VERSION_ID", modCivModsVersionId));
+        }
+        else {
+            this.modCivModsVersionIdText.classList.add('hidden');
+        }*/
+        
+        // CivMods - Category
+		const category = Modding.getModProperty(modInfo.handle, 'CivModsCategory');
+        if (category) {
+			this.modCivModsCategoryText.classList.remove('hidden');
+			this.modCivModsCategoryText.setAttribute('data-l10n-id', Locale.stylize("LOC_MOD_TCS_UI_CIVMODS_CATEGORY", category));
+        }
+		else {
+			this.modCivModsCategoryText.classList.add('hidden');
+		}
+
+        // CivMods
+        if (Modding.getModProperty(modInfo.handle, 'CivModsVersion') || Modding.getModProperty(modInfo.handle, 'CivModsURL') || Modding.getModProperty(modInfo.handle, 'CivModsCategory')) {
+			this.modCivModsText.classList.remove('hidden');
+			this.modCivModsText.setAttribute('data-l10n-id', Locale.stylize("LOC_MOD_TCS_UI_CIVMODS_MANAGED"));
+            this.modCivModsText.setAttribute('data-tooltip-content', Locale.compose("LOC_MOD_TCS_UI_CIVMODS_MANAGED_TOOLTIP"));
+        }
+		else {
+			this.modCivModsText.classList.add('hidden');
+		}
 		
 		// URL
-		const modUrl = Modding.getModProperty(modInfo.handle, 'URL');
+		const modUrl = (Modding.getModProperty(modInfo.handle, 'URL')) ? Modding.getModProperty(modInfo.handle, 'URL') : Modding.getModProperty(modInfo.handle, 'CivModsURL');
         if (modUrl) {
 			this.modUrlText.classList.remove('hidden');
 			this.modUrlText.setAttribute('data-l10n-id', Locale.stylize("LOC_MOD_TCS_UI_MOD_URL"));
