@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <EnglishText>
+		<Row Tag="LOC_MOD_UI_MINI_MAP_BORDERS">
+			<Text>Civ Border</Text>
+		</Row>
+		<Row Tag="LOC_MOD_UI_MINI_MAP_CITY_BORDERS">
+			<Text>City Border</Text>
+		</Row>
+        <Row Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED">
+            <Text>Border Toggles • City border visible in default view</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DESCRIPTION">
+            <Text>Shows the city border in the default view (no lens selected) when loading or starting a game. You can still toggle it manually.</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_TRADE">
+            <Text>Border Toggles • City border visible for trade lens</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_TRADE_DESCRIPTION">
+            <Text>Shows the city border when you select a merchant or when you select the trade lens.</Text>
+        </Row>
+       <Row Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_MAPTACKS">
+            <Text>Border Toggles • City border visible for map tacks (mod)</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_MAPTACKS_DESCRIPTION">
+            <Text>Shows the city border while placing map tacks with the Detailed Map Tacks mod.</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_RELIGION">
+            <Text>Border Toggles • City border visible for religion lens (mod)</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_RELIGION_DESCRIPTION">
+            <Text>Shows the city border with religion lenses from mods when loading or starting a game. You can still toggle it manually.</Text>
+        </Row>
+        <InsertOrIgnore Tag="LOC_OPTIONS_GROUP_FINWICKLE_MODS">
+            <Text>Finwickle's mods</Text>
+        </InsertOrIgnore>
+    </EnglishText>
+</Database>

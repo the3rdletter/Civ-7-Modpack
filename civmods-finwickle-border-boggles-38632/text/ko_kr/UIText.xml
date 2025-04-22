@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <LocalizedText>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_BORDERS" Language="ko_KR">
+			<Text>문명 경계</Text>
+		</Replace>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_CITY_BORDERS" Language="ko_KR">
+			<Text>도시 경계</Text>
+		</Replace>
+         <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED" Language="ko_KR">
+            <Text>Border Toggles • 기본 렌즈에 도시 경계 표시</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DESCRIPTION" Language="ko_KR">
+            <Text>게임 로드 또는 시작 시 기본 렌즈(렌즈 선택 없음)에서 도시 경계를 표시합니다. 수동으로도 전환할 수 있습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_TRADE" Language="ko_KR">
+            <Text>Border Toggles • 교역 렌즈에 도시 경계 표시</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_TRADE_DESCRIPTION" Language="ko_KR">
+            <Text>교역 렌즈를 선택하거나 상인을 선택할 때 도시 경계를 표시합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_MAPTACKS" Language="ko_KR">
+            <Text>Border Toggles • Map Tacks(모드)에 도시 경계 표시</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_MAPTACKS_DESCRIPTION" Language="ko_KR">
+            <Text>Detailed Map Tacks(모드)로 태그를 배치할 때 도시 경계를 표시합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_RELIGION" Language="ko_KR">
+            <Text>Border Toggles • 종교 렌즈(모드)에 도시 경계 표시</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_RELIGION_DESCRIPTION" Language="ko_KR">
+            <Text>게임 로드 또는 시작 시 종교 렌즈(모드)에서 도시 경계를 표시합니다. 수동으로도 전환할 수 있습니다.</Text>
+        </Replace>
+   </LocalizedText>
+</Database>
