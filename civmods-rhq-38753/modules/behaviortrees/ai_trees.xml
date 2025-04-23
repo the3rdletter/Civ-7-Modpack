@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<BehaviorTrees>
+		<Row TreeName="Naval Superiority Tree v2" />
+	</BehaviorTrees> 
+		
+	<!-- Trying to just declare like this as it's easier to read and debug -->
+	<!-- That worked, this is nicer. -->
+	<!-- This is for antiquity, so remove Form Army -->
+	<BehaviorTreeNodes>
+		<!-- Naval Superiority v2 -->
+		<Row NodeType="Sequence" NodeId="0" TreeName="Naval Superiority Tree v2" JumpTo="9" />
+		<Row NodeType="Decode Input" NodeId="1" TreeName="Naval Superiority Tree v2" />
+		<Row NodeType="Operation Recruit Units" NodeId="2" TreeName="Naval Superiority Tree v2" />
+		<Row NodeType="Concurrent" NodeId="3" TreeName="Naval Superiority Tree v2" JumpTo="9" />
+		<Row NodeType="Operation Recruit Units" NodeId="4" TreeName="Naval Superiority Tree v2" />
+		<Row NodeType="Operation Defend Units" NodeId="5" TreeName="Naval Superiority Tree v2" />
+		<Row NodeType="Naval Escort" NodeId="6" TreeName="Naval Superiority Tree v2" />
+		<Row NodeType="Operation Attack Units" NodeId="7" TreeName="Naval Superiority Tree v2" />
+		<Row NodeType="Naval Patrol" NodeId="8" TreeName="Naval Superiority Tree v2" />
+	</BehaviorTreeNodes>
+
+	<TreeData>
+		<Row DefnId="0" NodeId="1" TreeName="Naval Superiority Tree v2" />
+		<Row DefnId="1" NodeId="1" TreeName="Naval Superiority Tree v2" />
+		<Row DefnId="2" NodeId="1" TreeName="Naval Superiority Tree v2" />
+		<Row DefnId="3" NodeId="1" TreeName="Naval Superiority Tree v2" Tag="START" />
+		<Row DefnId="4" NodeId="1" TreeName="Naval Superiority Tree v2" />
+		<Row DefnId="5" NodeId="1" TreeName="Naval Superiority Tree v2" />
+		<Row DefnId="3" NodeId="2" TreeName="Naval Superiority Tree v2" DefaultData="10" />
+		<Row DefnId="0" NodeId="4" TreeName="Naval Superiority Tree v2" DefaultData="true" />
+		<Row DefnId="3" NodeId="4" TreeName="Naval Superiority Tree v2" DefaultData="-1" />
+		<Row DefnId="0" NodeId="7" TreeName="Naval Superiority Tree v2" DefaultData="true" />
+		<Row DefnId="1" NodeId="7" TreeName="Naval Superiority Tree v2" DefaultData="false" />
+	</TreeData>
+</Database>
