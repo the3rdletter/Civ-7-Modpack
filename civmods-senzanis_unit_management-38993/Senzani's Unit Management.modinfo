@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="senzanis_unit_management" version="1.1.2"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>Senzani's Unit Management</Name>
+		<Description>Provides the ability to list all units and quickly navigate to selected unit.</Description>
+		<Authors>Senzani</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	<!-- Added automatically by CivMods: Do not edit -->
+	<CivModsCategory>Units</CivModsCategory>
+	<CivModsInternalVersionId>m787o10xjr167br</CivModsInternalVersionId>
+	<CivModsURL>https://forums.civfanatics.com/resources/unit-management-mod.32294/</CivModsURL>
+	<CivModsVersion>1.1.2</CivModsVersion>
+	<CivModsVersionDate>2025-05-16T19:55:17.000Z</CivModsVersionDate>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="MOD-ID-menu" scope="shell" criteria="always">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<Actions>
+				<UIScripts>
+					<Item>ui/options/MOD-ID-options.js</Item>
+					<Item>ui/options/mod-options-decorator.js</Item>
+				</UIScripts>
+				<UpdateText>
+					<Item>text/en_us/InGameText.xml</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="shell-senzanis-unit-management-always" scope="shell" criteria="always">
+			<Properties>
+				<LoadOrder>1001</LoadOrder>
+			</Properties>
+			<Actions>
+				<UIScripts>
+					<Item>ui/options/unit-management-options.js</Item>
+					<Item>ui/options/mod-options-decorator.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="game-senzanis-unit-management-always" scope="game" criteria="always">
+			<Properties>
+				<LoadOrder>10</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateText>
+					<Item>text/Senzanis_Unit_Management_Text.sql</Item>
+				</UpdateText>
+				<UIScripts>
+					<Item>ui/unit-management/screen-unit-management.js</Item>
+					<Item>ui/unit-management/model-unit-management.js</Item>
+					<Item>ui/sub-system-dock/Sen_ViewUnitMangement.js</Item>
+					<Item>ui/options/unit-management-options.js</Item>
+					<Item>ui/options/mod-options-decorator.js</Item>
+				</UIScripts>
+				<ImportFiles>
+					<Item>textures/view_units.png</Item>
+					<Item>textures/chevron_close.png</Item>
+					<Item>textures/chevron_open.png</Item>
+					<Item>textures/command_star.png</Item>
+					<Item>textures/lock.png</Item>
+					<Item>textures/unlock.png</Item>
+					<Item>textures/promote.png</Item>
+					<Item>textures/upgrade.png</Item>
+					<Item>textures/spreadreligion.png</Item>
+					<Item>ui/unit-management/screen-unit-management.html</Item>
+					<Item>ui/unit-management/screen-unit-management.css</Item>
+				</ImportFiles>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+</Mod>

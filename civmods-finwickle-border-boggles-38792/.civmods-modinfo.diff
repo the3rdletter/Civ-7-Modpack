@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -10,12 +10,6 @@
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+ 		<Version>4.3</Version>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>q8f48434m4ntp5s</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/border-toggles.32008/</CivModsURL>
+-	<CivModsVersion>4.3</CivModsVersion>
+-	<CivModsVersionDate>2025-04-26T19:21:18.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />

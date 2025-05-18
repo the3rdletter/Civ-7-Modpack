@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_NAME" Language="de_DE">
+			<Text>Border Toggles</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_DESCRIPTION" Language="de_DE">
+			<Text>Fügt Schalter zum Anzeigen/Ausblenden von Reichs- und Stadtgrenzen hinzu. Stadtgrenzen zeigen bei nahe beieinander liegenden Städten an, welches Feld zu welcher Stadt gehört.
+			</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_SPECIALTHANKS" Language="de_DE">
+			<Text>Borush96, Chr1Z, F1rstDan, Gusjeon, iBlockZer0, J437, leonardify, Somchai2548 und Webrok für Übersetzungen.</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_COMPATIBILITY" Language="de_DE">
+			<Text>Dies sollte mit allen anderen aktualisierten Mods kompatibel sein.</Text>
+		</Row>
+	</LocalizedText>
+</Database>

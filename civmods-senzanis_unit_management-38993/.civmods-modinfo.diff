@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -7,12 +7,6 @@
+ 		<Authors>Senzani</Authors>
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>Units</CivModsCategory>
+-	<CivModsInternalVersionId>m787o10xjr167br</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/unit-management-mod.32294/</CivModsURL>
+-	<CivModsVersion>1.1.2</CivModsVersion>
+-	<CivModsVersionDate>2025-05-16T19:55:17.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>

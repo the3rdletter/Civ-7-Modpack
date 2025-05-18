@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="detailed-tech-civic-progress" version="1" xmlns="ModInfo">
+    <Properties>
+        <Name>LOC_MOD_DETAILED_TECH_CIVIC_PROGRESS_NAME</Name>
+        <Description>LOC_MOD_DETAILED_TECH_CIVIC_PROGRESS_DESCRIPTION</Description>
+        <Authors>wltk</Authors>
+        <Package>Mod</Package>
+        <AffectsSavedGames>0</AffectsSavedGames>
+    <!-- Added automatically by CivMods: Do not edit -->
+    <CivModsCategory>UI Mods</CivModsCategory>
+    <CivModsInternalVersionId>a8y97q5ofbyxw89</CivModsInternalVersionId>
+    <CivModsURL>https://forums.civfanatics.com/resources/detailed-tech-civic-progress.31924/</CivModsURL>
+    <CivModsVersion>1.0.3</CivModsVersion>
+    <CivModsVersionDate>2025-05-03T17:23:37.000Z</CivModsVersionDate>
+    </Properties>
+    <Dependencies>
+        <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+    </Dependencies>
+    <ActionCriteria>
+        <Criteria id="always">
+            <AlwaysMet></AlwaysMet>
+        </Criteria>
+    </ActionCriteria>
+    <ActionGroups>
+        <ActionGroup id="game-detailed-tech-civic-progress" scope="game" criteria="always">
+            <Actions>
+                <UIScripts>
+                    <Item>ui/tooltips/tech-civic-tooltip.js</Item>
+                    <Item>ui/tree-chooser-item/dtcp-tree-chooser-item-decorator.js</Item>
+                    <Item>ui/tree-grid/dtcp-tree-card-decorator.js</Item>
+                    <Item>ui/utilities/dtcp-utilities-tech-civic-progress.js</Item>
+                </UIScripts>
+                <UpdateText>
+                    <Item>text/en_us/ModuleText.xml</Item>
+                    <Item locale="zh_Hans_CN">l10n/ModuleText.xml</Item>
+                </UpdateText>
+            </Actions>
+        </ActionGroup>
+    </ActionGroups>
+    <LocalizedText>
+        <File>text/en_us/ModuleText.xml</File>
+        <File>l10n/ModuleText.xml</File>
+    </LocalizedText>
+</Mod>

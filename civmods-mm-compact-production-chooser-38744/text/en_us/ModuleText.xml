@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_MOD_MM_COMPACT_UI_NAME">
+			<Text>MantisMaestro's Compact Production Chooser</Text>
+		</Row>
+		<Row Tag="LOC_MOD_MM_COMPACT_UI_DESCRIPTION">
+			<Text>A mod to make parts of the UI more compact - currently only effects the production chooser list.</Text>
+		</Row>
+	</EnglishText>
+</Database>

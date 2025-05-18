@@ -1,0 +1,18 @@
+{
+    "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "github": {
+        "release": true,
+        "assets": "bun utils/release/get-assets.ts"
+    },
+    "npm": {
+        "release": false,
+        "publish": false
+    },
+    "git": {
+        "requireBranch": "main",
+        "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template https://raw.githubusercontent.com/release-it/release-it/main/templates/changelog-compact.hbs"
+    },
+    "hooks": {
+        "after:bump": ["npx auto-changelog -p", "bun bundle", "bun archive"]
+    }
+}

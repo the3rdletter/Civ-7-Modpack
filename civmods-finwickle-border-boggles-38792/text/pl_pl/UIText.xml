@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <LocalizedText>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_BORDERS" Language="pl_PL">
+			<Text>Granice cyw</Text>
+		</Replace>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_CITY_BORDERS" Language="pl_PL">
+			<Text>Granice miast</Text>
+		</Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED" Language="pl_PL">
+            <Text>Border Toggles • Granice miast widoczne w widoku domyślnym</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DESCRIPTION" Language="pl_PL">
+            <Text>Pokazuje granice miast w widoku domyślnym (bez wybranych filtrów) gdy kontynuujesz lub zaczynasz grę oraz dla filtrów osadnika i kontynentu. Możesz nadal samemu kontrolować to manualnie. Efekt ten działa rownież dla filtrów z modów Discovery Lens, Treasure Lens i Search Natural Wonders.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_TRADE" Language="pl_PL">
+            <Text>Border Toggles • Granice miast widoczne dla filtru handlu</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_TRADE_DESCRIPTION" Language="pl_PL">
+            <Text>Pokazuje granice miast gdy wybierasz kupca lub gdy wybierasz filtr handlu.</Text>
+        </Replace>
+       <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_MAPTACKS" Language="pl_PL">
+            <Text>Border Toggles • Granice miast widoczne dla modu (map tacks)</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_MAPTACKS_DESCRIPTION" Language="pl_PL">
+            <Text>Pokazuje granice miast gdy stawiasz znaczniki na mapie z modu (Detailed Map Tacks).</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_RELIGION" Language="pl_PL">
+            <Text>Border Toggles • Granice miast widoczne dla modu (religion lens)</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_RELIGION_DESCRIPTION" Language="pl_PL">
+            <Text>Pokazuje granice miast z wybranym filtrem religii z modu (religion lense) gdy kontynuujesz lub zaczynasz grę. Możesz nadal samemu kontrolować to manualnie.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DEBUG" Language="pl_PL">
+            <Text>Border Toggles • Loguj wiadomości debugowe</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DEBUG_DESCRIPTION" Language="pl_PL">
+            <Text>Loguje wiadomości debugowe do UI.log. Opcja powinnna być włączona tylko wtedy kiedy gra pyta o opis w razie pomocy przy rozwiązywaniu problemu z tym modem.</Text>
+        </Replace>
+    </LocalizedText>
+</Database>

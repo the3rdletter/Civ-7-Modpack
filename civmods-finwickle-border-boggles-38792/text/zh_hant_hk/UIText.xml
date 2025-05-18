@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <LocalizedText>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_BORDERS" Language="zh_Hant_HK">
+			<Text>文明邊界</Text>
+		</Replace>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_CITY_BORDERS" Language="zh_Hant_HK">
+			<Text>城市邊界</Text>
+		</Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED" Language="zh_Hant_HK">
+            <Text>Border Toggles • Show city borders by default</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DESCRIPTION" Language="zh_Hant_HK">
+            <Text>Shows the city borders in the default view (no lens selected) when loading or starting a game, and for the Settler and Continent lens. You can still toggle it manually. [N] [N]Lenses from these mods also follow this setting: Discovery Lens, Treasure Lens, Search Natural Wonders.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_TRADE" Language="zh_Hant_HK">
+            <Text>Border Toggles • Show city borders for trade lens</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_TRADE_DESCRIPTION" Language="zh_Hant_HK">
+            <Text>Shows the city borders when you select a merchant or when you select the trade lens.</Text>
+        </Replace>
+       <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_MAPTACKS" Language="zh_Hant_HK">
+            <Text>Border Toggles • Show city borders for map tacks (mod)</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_MAPTACKS_DESCRIPTION" Language="zh_Hant_HK">
+            <Text>Shows the city borders while placing map tacks with the Detailed Map Tacks mod.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_RELIGION" Language="zh_Hant_HK">
+            <Text>Border Toggles • Show city borders for religion lens (mod)</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_RELIGION_DESCRIPTION" Language="zh_Hant_HK">
+            <Text>Shows the city borders with religion lenses from mods when loading or starting a game. You can still toggle it manually.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DEBUG" Language="zh_Hant_HK">
+            <Text>Border Toggles • Log debug messages</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DEBUG_DESCRIPTION" Language="zh_Hant_HK">
+            <Text>Logs debug messages to the UI.log. Only needs to be enabled when asked to help troubleshoot issues with this mod.</Text>
+        </Replace>
+    </LocalizedText>
+</Database>

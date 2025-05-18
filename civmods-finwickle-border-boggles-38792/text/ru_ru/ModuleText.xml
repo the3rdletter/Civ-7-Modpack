@@ -1,0 +1,17 @@
+<Database>
+	<LocalizedText>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_NAME" Language="ru_RU">
+			<Text>Border Toggles</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_DESCRIPTION" Language="ru_RU">
+			<Text>Добавляет переключатель отображения границ цивилизаций и границ городов. Границы городов показывают, какая клетка принадлежит какому городу. Полезно, когда города расположены близко.
+			</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_SPECIALTHANKS" Language="ru_RU">
+			<Text>Borush96, Chr1Z, F1rstDan, Gusjeon, iBlockZer0, J437, leonardify, Somchai2548 и Webrok за локализации.</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_COMPATIBILITY" Language="ru_RU">
+			<Text>Совместим с другими обновленными модами.</Text>
+		</Row>
+	</LocalizedText>
+</Database>

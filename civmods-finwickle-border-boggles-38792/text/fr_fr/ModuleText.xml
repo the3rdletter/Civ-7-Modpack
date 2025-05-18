@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Row Tag="LOC_MOD_ORDER_TOGGLES_NAME" Language="fr_FR">
+			<Text>Border Toggles</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_DESCRIPTION" Language="fr_FR">
+			<Text>Ajoute des boutons permettant d'afficher/masquer les frontières des civilisations et des villes. Les frontières des villes indiquent à quelle tuile appartient à quelle ville, pour les villes proches les unes des autres.
+			</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_SPECIALTHANKS" Language="fr_FR">
+			<Text>Borush96, Chr1Z, F1rstDan, Gusjeon, iBlockZer0, J437, leonardify, Somchai2548 et Webrok pour les traductions.</Text>
+		</Row>
+		<Row Tag="LOC_MOD_BORDER_TOGGLES_COMPATIBILITY" Language="fr_FR">
+			<Text>Cela devrait être compatible avec tous les autres mods mis à jour.</Text>
+		</Row>
+	</LocalizedText>
+</Database>

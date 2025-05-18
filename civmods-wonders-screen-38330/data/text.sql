@@ -1,0 +1,46 @@
+--========================================================================================================================
+--========================================================================================================================
+INSERT OR REPLACE INTO LocalizedText
+    (Tag,	Language,	Text)
+VALUES
+    ('LOC_UI_VIEW_WONDERS',		                    'en_US',	"View Wonders"),
+    ('LOC_UI_WONDER_SCREEN_HEADER',		            'en_US',	"All Wonders"),
+    ('LOC_UI_WONDER_SCREEN_INCOMPLETE_HEADER',		'en_US',	"Available Wonders"),
+    ('LOC_UI_WONDER_SCREEN_COMPLETED_HEADER',		'en_US',	"Completed Wonders"),
+    ('LOC_UI_WONDER_SCREEN_SHOW_BUILDABLE_TOWNS',	'en_US',	"Show buildable towns"),
+    ('LOC_UI_WONDER_SCREEN_NOT_BUILDABLE',		    'en_US',	"Not buildable in any settlements!"),
+    ('LOC_UI_WONDER_SCREEN_UNDER_CONSTRUCTION_IN',	'en_US',	"Under construction in:"),
+    ('LOC_UI_WONDER_SCREEN_BUILDABLE_IN',		    'en_US',	"Buildable in:"),
+    ('LOC_UI_WONDER_SCREEN_BUILDABLE_IN_TOWNS',		'en_US',	"Buildable only in towns!"),
+    ('LOC_UI_WONDER_SCREEN_YOU',		            'en_US',	"You"),
+    ('LOC_UI_WONDER_SCREEN_UNMET_OWNER',		    'en_US',	"Unmet owner"),
+    ('LOC_UI_WONDER_SCREEN_UNMET_CONSTRUCTOR',		'en_US',	"Unmet leader's city"),
+    ('LOC_UI_WONDER_SCREEN_UNKNOWN_LOCATION',       'en_US',    "unknown city"),
+    ('LOC_UI_WONDER_SCREEN_REQUIREMENT_OR',         'en_US',    "or"), 
+-- Russian text from Webrok
+    ('LOC_UI_VIEW_WONDERS',		                    'ru_RU',	"Показать чудеса света"),
+    ('LOC_UI_WONDER_SCREEN_HEADER',		            'ru_RU',	"Все чудеса света"),
+    ('LOC_UI_WONDER_SCREEN_INCOMPLETE_HEADER',		'ru_RU',	"Доступные чудеса света"),
+    ('LOC_UI_WONDER_SCREEN_COMPLETED_HEADER',		'ru_RU',	"Построенные чудеса света"),
+    ('LOC_UI_WONDER_SCREEN_SHOW_BUILDABLE_TOWNS',	'ru_RU',	"Показать городки, подходящие для строительства"),
+    ('LOC_UI_WONDER_SCREEN_NOT_BUILDABLE',		    'ru_RU',	"Нет подходящих поселений для постройки!"),
+    ('LOC_UI_WONDER_SCREEN_UNDER_CONSTRUCTION_IN',	'ru_RU',	"Строится в городе:"),
+    ('LOC_UI_WONDER_SCREEN_BUILDABLE_IN',		    'ru_RU',	"Можно построить в:"),
+    ('LOC_UI_WONDER_SCREEN_BUILDABLE_IN_TOWNS',		'ru_RU',	"Подходящая территория только в городках!"),
+    ('LOC_UI_WONDER_SCREEN_YOU',		            'ru_RU',	"Ваше"),
+    ('LOC_UI_WONDER_SCREEN_UNMET_OWNER',		    'ru_RU',	"Неизвестный лидер"),
+    ('LOC_UI_WONDER_SCREEN_UNMET_CONSTRUCTOR',		'ru_RU',	"Город неизвестного лидера"),
+-- Korean text from Gusjeon
+    ('LOC_UI_VIEW_WONDERS',		                    'ko_KR',	"불가사의 보기"),
+    ('LOC_UI_WONDER_SCREEN_HEADER',		            'ko_KR',	"모든 불가사의"),
+    ('LOC_UI_WONDER_SCREEN_INCOMPLETE_HEADER',		'ko_KR',	"건설 가능한 불가사의"),
+    ('LOC_UI_WONDER_SCREEN_COMPLETED_HEADER',		'ko_KR',	"완성된 불가사의"),
+    ('LOC_UI_WONDER_SCREEN_SHOW_BUILDABLE_TOWNS',	'ko_KR',	"건설 가능한 마을 표시"),
+    ('LOC_UI_WONDER_SCREEN_NOT_BUILDABLE',		    'ko_KR',	"어떤 정착지에서도 건설 불가능합니다!"),
+    ('LOC_UI_WONDER_SCREEN_UNDER_CONSTRUCTION_IN',	'ko_KR',	"건설중:"),
+    ('LOC_UI_WONDER_SCREEN_BUILDABLE_IN',		    'ko_KR',	"건설 가능:"),
+    ('LOC_UI_WONDER_SCREEN_BUILDABLE_IN_TOWNS',		'ko_KR',	"도시로 변환 후 건설 가능합니다!"),
+    ('LOC_UI_WONDER_SCREEN_YOU',		            'ko_KR',	"플레이어"),
+    ('LOC_UI_WONDER_SCREEN_UNMET_OWNER',		    'ko_KR',	"만나지 못한 소유자"),
+    ('LOC_UI_WONDER_SCREEN_UNMET_CONSTRUCTOR',		'ko_KR',	"만나지 못한 지도자의 도시"),
+    ('LOC_UI_WONDER_SCREEN_UNKNOWN_LOCATION',       'ko_KR',    "알 수 없는 도시");

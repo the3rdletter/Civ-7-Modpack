@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -11,12 +11,6 @@
+ 		<ShowInBrowser>1</ShowInBrowser>
+ 		<EnabledByDefault>0</EnabledByDefault>
+ 		<Version>1</Version>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>681zw701q340o94</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/concise-specialists-lense.32131/</CivModsURL>
+-	<CivModsVersion>1</CivModsVersion>
+-	<CivModsVersionDate>2025-03-28T07:47:37.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>

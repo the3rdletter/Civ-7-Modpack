@@ -1,0 +1,68 @@
+.completed-wonder-icon
+{
+    background-color: #D44;
+    border-radius: .25em;
+}
+
+.wonder-entry-internal {
+	width: 20rem;
+	border-image-source: url("rect_card_idle");
+	border-image-slice: 45 84 fill;
+	border-image-width: 2.5rem 4.6666666667rem;
+	border-image-outset: 2.3333333333rem 3.1666666667rem;
+}
+
+.wonder-entry-top-header {
+	vertical-align: middle;
+}
+
+.wonder-description-text
+{
+    border: 1px solid grey;
+    background-color: #5555;
+}
+
+.ssb__button-icon.wonders {
+    background-image: url("fs://game/wonders-screen/data/wonder.png");
+}
+
+.wonder-unbuildable-header
+{
+    color: firebrick;
+}
+
+/* Background colors for wonder card status */
+.player-owned
+{
+    /* green */
+    background-color: #0f05;
+}
+
+.player-constructing
+{
+    /* lightblue */
+    /* background-color: #add8e655; */
+    background-color: #06c9;
+}
+
+.other-constructing
+{
+    /* darkred */
+    background-color: #9005;
+}
+
+.competing-constructing
+{
+    /* yellow */
+    background-color: #ff05;
+}
+
+.locked .wonder-entry-internal
+{
+	opacity: 0.8;
+}
+
+.wonder-unlocks
+{
+    color: goldenrod;
+}

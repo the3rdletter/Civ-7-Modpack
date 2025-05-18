@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="nasuellia-non-sticky-selection" version="9.9" xmlns="ModInfo">
+    <Properties>
+        <Name>nasuellia-non-sticky-selection</Name>
+        <Description>implements non-sticky selection</Description>
+        <Authors>nasuellia</Authors>
+        <Package>Mod</Package>
+        <AffectsSavedGames>0</AffectsSavedGames>
+    <!-- Added automatically by CivMods: Do not edit -->
+    <CivModsCategory>UI Mods</CivModsCategory>
+    <CivModsInternalVersionId>0kpww6hz59c7rt3</CivModsInternalVersionId>
+    <CivModsURL>https://forums.civfanatics.com/resources/nasuellia-non-sticky-selection.31966/</CivModsURL>
+    <CivModsVersion>0.9.9</CivModsVersion>
+    <CivModsVersionDate>2025-04-24T16:54:59.000Z</CivModsVersionDate>
+    </Properties>
+    <Dependencies>
+        <Mod id="core" title="LOC_MODULE_CORE_NAME"/>
+    </Dependencies>
+    <ActionCriteria>
+        <Criteria id="always">
+            <AlwaysMet/>
+        </Criteria>
+    </ActionCriteria>
+    <ActionGroups>
+        <ActionGroup id="nasuellia-non-sticky-selection-scripts" scope="game" criteria="always">
+            <Properties>
+                <LoadOrder>101</LoadOrder>
+            </Properties>
+            <Actions>
+                <ImportFiles>
+                    <Item>core/ui/input/action-handler.js</Item>
+                </ImportFiles>
+            </Actions>
+        </ActionGroup>
+    </ActionGroups>
+</Mod>

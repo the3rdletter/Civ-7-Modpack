@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_BETTER_PAUSE_MENU_NAME">
+			<Text>Better Pause Menu</Text>
+		</Row>
+		<Row Tag="LOC_BETTER_PAUSE_MENU_DESCRIPTION">
+			<Text>Condenses the buttons in the pause menu into a single column.</Text>
+		</Row>
+	</EnglishText>
+</Database>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="wonders-screen" version="1.5"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>Wonders Screen</Name>
+		<Description>Provides a screen that displays the status of all wonders for the current age.</Description>
+		<Authors>KayleeR</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+		<!-- properties for TCS Improved Mod Page -->
+		<Version>1.4</Version>
+		<SpecialThanks>Localization: Webrok(ru), Gusjeon(kr)</SpecialThanks>
+	<!-- Added automatically by CivMods: Do not edit -->
+	<CivModsCategory>UI Mods</CivModsCategory>
+	<CivModsInternalVersionId>6un50q5g6rnn621</CivModsInternalVersionId>
+	<CivModsURL>https://forums.civfanatics.com/resources/wonders-screen.32083/</CivModsURL>
+	<CivModsVersion>1.5</CivModsVersion>
+	<CivModsVersionDate>2025-03-22T23:29:42.000Z</CivModsVersionDate>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="wonders-screen-menu" scope="shell" criteria="always">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<Actions>
+				<UIScripts>
+					<Item>code/mod-options-decorator.js</Item>
+					<Item>code/wonders-screen-options.js</Item>
+				</UIScripts>
+				<UpdateText>
+					<Item>data/options-text.sql</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="wonders-screen-ui-modifications-always" scope="game" criteria="always">
+			<Properties>
+				<LoadOrder>20</LoadOrder>
+			</Properties>
+			<Actions>
+				<UIScripts>
+					<Item>code/wonders-screen.js</Item>
+					<Item>code/wonders-screen-model.js</Item>
+					<Item>code/subsystem-dock-decorator.js</Item>
+					<!-- Options -->
+					<Item>code/mod-options-decorator.js</Item>
+					<Item>code/wonders-screen-options.js</Item>
+				</UIScripts>
+				<ImportFiles>
+					<Item>data/screen-wonders.html</Item>
+					<Item>data/screen-wonders.css</Item>
+					<Item>data/wonder.png</Item>
+				</ImportFiles>
+				<UpdateText>
+					<Item>data/options-text.sql</Item>
+					<Item>data/text.sql</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+</Mod>

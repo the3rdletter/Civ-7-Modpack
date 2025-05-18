@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+  <EnglishText>
+    <Row Tag="LOC_PJLIBTW_RENAME_DIALOG">
+      <Text>The {1_civ_adjective} citizens of {2_old_city_name} have started calling the city {3_new_city_name}. Should the city be renamed?</Text>
+    </Row>
+	
+	<Row Tag="LOC_PJLIBTW_RENAME_DIALOG_TITLE">
+      <Text>Rename city?</Text>
+    </Row>
+  </EnglishText>
+</Database>

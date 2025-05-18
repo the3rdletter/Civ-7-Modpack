@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -7,12 +7,6 @@
+ 		<Authors>p0kiehl</Authors>
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>mf6w0yn93ay8ly5</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/multiplayer-cinematics-pop-ups.31878/</CivModsURL>
+-	<CivModsVersion>v3</CivModsVersion>
+-	<CivModsVersionDate>2025-03-29T21:30:40.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>

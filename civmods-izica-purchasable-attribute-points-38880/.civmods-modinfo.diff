@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -7,12 +7,6 @@
+         <Authors>izica</Authors>
+         <Package>Mod</Package>
+         <AffectsSavedGames>0</AffectsSavedGames>
+-    <!-- Added automatically by CivMods: Do not edit -->
+-    <CivModsCategory>Misc</CivModsCategory>
+-    <CivModsInternalVersionId>6ac0yf617co6nqb</CivModsInternalVersionId>
+-    <CivModsURL>https://forums.civfanatics.com/resources/purchasable-attribute-points.32289/</CivModsURL>
+-    <CivModsVersion>1.1</CivModsVersion>
+-    <CivModsVersionDate>2025-05-09T05:15:22.000Z</CivModsVersionDate>
+     </Properties>
+     <Dependencies>
+         <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />

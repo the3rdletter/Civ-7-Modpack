@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ov_pjlibtw" version="1.1"
+  xmlns="ModInfo">
+  <Properties>
+    <Name>LOC_PJLIBTW_NAME</Name>
+    <Description>LOC_PJLIBTW_DESCRIPTION</Description>
+    <Authors>Ori Vandewalle</Authors>
+    <Package>MOD</Package>
+	<AffectsSavedGames>0</AffectsSavedGames>
+  <!-- Added automatically by CivMods: Do not edit -->
+  <CivModsCategory>Misc</CivModsCategory>
+  <CivModsInternalVersionId>5z8ds9xux53pmjb</CivModsInternalVersionId>
+  <CivModsURL>https://forums.civfanatics.com/resources/people-just-liked-it-better-that-way.32054/</CivModsURL>
+  <CivModsVersion>1.1</CivModsVersion>
+  <CivModsVersionDate>2025-03-13T02:11:35.000Z</CivModsVersionDate>
+  </Properties>
+  
+  <Dependencies>
+    <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+  </Dependencies>
+  
+  <ActionCriteria>
+    <Criteria id="always">
+      <AlwaysMet></AlwaysMet>
+    </Criteria>
+
+    <Criteria id="after-antiquity" any="true">
+      <AgeInUse>AGE_EXPLORATION</AgeInUse>
+      <AgeInUse>AGE_MODERN</AgeInUse>
+    </Criteria>
+  </ActionCriteria>
+  
+  <ActionGroups>
+    <ActionGroup id="pjlibtw-action-always" scope="game" criteria="always">
+      <Actions>
+        <UpdateText>
+          <Item>text/en_us/pjlibtw_modinfo.xml</Item>
+        </UpdateText>
+      </Actions>
+    </ActionGroup>
+
+    <ActionGroup id="pjlibtw-action-after-antiquity" scope="game" criteria="after-antiquity">
+      <Actions>
+        <UpdateText>
+          <Item>text/en_us/pjlibtw_dialog.xml</Item>
+        </UpdateText>
+
+        <UIScripts>
+          <Item>ui/ov-pjlibtw-panel-production-chooser.js</Item>
+          <Item>ui/ov-pjlibtw-production-chooser-operations.js</Item>
+        </UIScripts>
+
+        <ImportFiles>
+          <Item>ui/ov-pjlibtw-panel-production-chooser.js</Item>
+          <Item>ui/ov-pjlibtw-production-chooser-operations.js</Item>
+        </ImportFiles>
+      </Actions>
+    </ActionGroup>
+  </ActionGroups>
+
+  <LocalizedText>
+    <File>text/en_us/pjlibtw_modinfo.xml</File>
+  </LocalizedText>
+</Mod>

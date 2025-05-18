@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="mm-compact-production-chooser" version="2.3"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_MOD_MM_COMPACT_UI_NAME</Name>
+		<Description>LOC_MOD_MM_COMPACT_UI_DESCRIPTION</Description>
+		<Authors>MantisMaestro</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+		<Version>2.3</Version>
+	<!-- Added automatically by CivMods: Do not edit -->
+	<CivModsCategory>UI Mods</CivModsCategory>
+	<CivModsInternalVersionId>4rd2c6ikh928c1l</CivModsInternalVersionId>
+	<CivModsURL>https://forums.civfanatics.com/resources/mantismaestros-compact-production-chooser.31862/</CivModsURL>
+	<CivModsVersion>2.3.1</CivModsVersion>
+	<CivModsVersionDate>2025-04-22T19:57:11.000Z</CivModsVersionDate>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="compact-production-chooser" scope="game" criteria="always">
+			<Properties>
+				<LoadOrder>1500</LoadOrder>
+			</Properties>
+			<Actions>
+				<ImportFiles>
+					<Item>base-standard/ui/production-chooser/production-chooser-item.js</Item>
+					<Item>base-standard/ui/production-chooser/production-chooser-helpers.js</Item>
+				</ImportFiles>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ModuleText.xml</File>
+	</LocalizedText>
+</Mod>

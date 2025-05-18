@@ -1,0 +1,26 @@
+{
+    "name": "tbq_choose_starting_layers",
+    "id": "tbq-csl",
+    "visibleName": "Choose Starting Layers",
+    "description": "Adds user settings to allow a choice of layers (hexgrid and/or tile yields) that should be enabled when the game loads.",
+    "authors": ["TBQ"],
+    "entries": {
+        "init": "init.ts"
+    },
+    "replacements": {
+        "default-lens": "default-lens.js",
+        "hexgrid": "hexgrid-layer.js"
+    },
+    "texts": ["localization.sql"],
+    "actionGroups": {
+        "shell": {
+            "scope": "shell",
+            "entries": ["init"]
+        },
+        "game": {
+            "scope": "game",
+            "entries": ["init"],
+            "replacements": ["default-lens", "hexgrid"]
+        }
+    }
+}

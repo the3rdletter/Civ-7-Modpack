@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -10,12 +10,6 @@
+ 		<!-- properties for TCS Improved Mod Page -->
+ 		<Version>1.4</Version>
+ 		<SpecialThanks>Localization: Webrok(ru), Gusjeon(kr)</SpecialThanks>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>6un50q5g6rnn621</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/wonders-screen.32083/</CivModsURL>
+-	<CivModsVersion>1.5</CivModsVersion>
+-	<CivModsVersionDate>2025-03-22T23:29:42.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <LocalizedText>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_BORDERS" Language="ru_RU">
+			<Text>Империи</Text>
+		</Replace>
+		<Replace Tag="LOC_MOD_UI_MINI_MAP_CITY_BORDERS" Language="ru_RU">
+			<Text>Города</Text>
+		</Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED" Language="ru_RU">
+            <Text>Border Toggles • Показывать границы городов по умолчанию</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DESCRIPTION" Language="ru_RU">
+            <Text>Показывает границы городов по умолчанию, при загрузке или запуске игры. [N] [N]Lenses from these mods also follow this setting: Discovery Lens, Treasure Lens, Search Natural Wonders.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_TRADE" Language="ru_RU">
+            <Text>Border Toggles • Показывать границы городов на линзе торговли</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_TRADE_DESCRIPTION" Language="ru_RU">
+            <Text>Показывает границы городов при выборе торговца или линзы торговли.</Text>
+        </Replace>
+       <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_MAPTACKS" Language="ru_RU">
+            <Text>Border Toggles • Показывать границы городов на линзе булавок (при наличии мода)</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_MAPTACKS_DESCRIPTION" Language="ru_RU">
+            <Text>Показывает границы городов при размещении булавок с модификацией Detailed Map Tacks.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_RELIGION" Language="ru_RU">
+            <Text>Border Toggles • Показывать границы городов на линзе религии (при наличии мода)</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_RELIGION_DESCRIPTION" Language="ru_RU">
+            <Text>Показывает границы городов на линзе религий при наличии соответствующей модификации.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DEBUG" Language="ru_RU">
+            <Text>Border Toggles • Log debug messages</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_FINWICKLE_CITY_BORDER_ENABLED_DEBUG_DESCRIPTION" Language="ru_RU">
+            <Text>Logs debug messages to the UI.log. Only needs to be enabled when asked to help troubleshoot issues with this mod.</Text>
+        </Replace>
+    </LocalizedText>
+</Database>

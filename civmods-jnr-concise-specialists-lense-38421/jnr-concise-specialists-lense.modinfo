@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="jnr-concise-specialists-lense" version="1"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>Concise Specialists Lense</Name>
+		<Description>Only shows net gain or loss in yields when placing specialists, as well as the sum of yields gained.</Description>
+		<Authors>JNR</Authors>
+		<SpecialThanks>Beezany, Izica</SpecialThanks>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+		<ShowInBrowser>1</ShowInBrowser>
+		<EnabledByDefault>0</EnabledByDefault>
+		<Version>1</Version>
+	<!-- Added automatically by CivMods: Do not edit -->
+	<CivModsCategory>UI Mods</CivModsCategory>
+	<CivModsInternalVersionId>681zw701q340o94</CivModsInternalVersionId>
+	<CivModsURL>https://forums.civfanatics.com/resources/concise-specialists-lense.32131/</CivModsURL>
+	<CivModsVersion>1</CivModsVersion>
+	<CivModsVersionDate>2025-03-28T07:47:37.000Z</CivModsVersionDate>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="base-game-main" scope="game" criteria="always">
+			<Properties>
+				<LoadOrder>13</LoadOrder>
+			</Properties>
+			<Actions>
+				<UIScripts>
+					<Item>ui/lenses/layer/worker-yields-layer.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+</Mod>

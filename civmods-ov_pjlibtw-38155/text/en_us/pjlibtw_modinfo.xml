@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+  <EnglishText>
+    <Row Tag="LOC_PJLIBTW_NAME">
+      <Text>People Just Liked It Better That Way</Text>
+    </Row>
+  
+    <Row Tag="LOC_PJLIBTW_DESCRIPTION">
+      <Text>Renames old settlements using current civ city names when converting a town to a city.</Text>
+    </Row>
+  </EnglishText>
+</Database>

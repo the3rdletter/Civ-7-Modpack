@@ -1,0 +1,54 @@
+<div class="resource-root h-full w-full flex flex-col">
+	<div class="resource-allocation-parent-slot flex flex-col flex-auto w-full mt-8 mb-16">
+		<div class="resource-civ-symbol relative bg-center bg-contain self-center size-20"></div>
+		<fxs-header class="civilization-name relative font-title text-base uppercase text-secondary"
+					filigree-style="none"></fxs-header>
+		<fxs-vslot class="border-frame-container shrink grow w-full">
+            <fxs-header class="relative font-title text-xl uppercase text-secondary mb-" filigree-style="none"
+                        title="LOC_UI_WONDER_SCREEN_HEADER"></fxs-header>
+			<fxs-frame frame-style="f2" class="resource-allocation-inner-frame grow"
+					   override-styling="items-center pt-5 relative flex max-w-full max-h-full px-10 pb-10"
+					   filigree-class="hidden" top-border-style="none">
+                            <!-- <img src="shell_small-filigree" class="relative w-full"> -->
+                            <!-- <div class="absolute top-0 left-0 h-full w-64 img-frame-filigree pointer-events-none">
+                            </div> -->
+                <fxs-hslot class="wonder-filter-container grow justify-end items-end">
+                    <div class="relative flex items-end mr-3">
+                        <p class="font-body text-xs mb-1" data-l10n-id="LOC_UI_WONDER_SCREEN_SHOW_BUILDABLE_TOWNS"></p>
+                        <fxs-checkbox class="show-buildable-towns" selected="true"></fxs-checkbox>
+                    </div>
+                </fxs-hslot>
+                <fxs-scrollable class="wonders-screen-scrollable my-4 flex-auto w-full">
+                    <fxs-header class="relative font-title text-xl uppercase text-secondary mb-" filigree-style="h4"
+                                title="LOC_UI_WONDER_SCREEN_INCOMPLETE_HEADER"></fxs-header>
+                    <div class="all-wonders mx-4 mb-6">
+                        <div class="all-wonders-box relative items-center">
+                            <fxs-spatial-slot
+                                            class="all-wonders-list-spatial flex items-center justify-center flex-wrap max-w-full max-h-full"></fxs-spatial-slot>
+                            <div class="wonder-column flow-column flex-auto mx-2 relative">
+                                <fxs-inner-frame class="absolute inset-0 city-inner-frame inset-x-6"></fxs-inner-frame>
+                                <fxs-vslot class="wonder-list flex flex-row flex-wrap px-8 py-4 justify-center" ignore-prior-focus="true"
+                                            tabindex="-1"></fxs-vslot>
+                            </div>
+                        </div>
+                    </div>
+                    <fxs-header class="relative font-title text-xl uppercase text-secondary mb-" filigree-style="h4"
+                                title="LOC_UI_WONDER_SCREEN_COMPLETED_HEADER"></fxs-header>
+                    <div class="completed-wonders mx-4 mb-6">
+                        <div class="completed-wonders-box relative items-center">
+                            <fxs-spatial-slot
+                                            class="completed-wonders-list-spatial flex items-center justify-center flex-wrap max-w-full max-h-full"></fxs-spatial-slot>
+                            <div class="wonder-column flow-column flex-auto mx-2 relative">
+                                <fxs-inner-frame class="absolute inset-0 city-inner-frame inset-x-6"></fxs-inner-frame>
+                                <fxs-vslot class="completed-wonder-list flex flex-row flex-wrap px-8 py-4 justify-center" ignore-prior-focus="true"
+                                            tabindex="-1"></fxs-vslot>
+                            </div>
+                        </div>
+                    </div>
+                </fxs-scrollable>
+				<fxs-close-button data-audio-group-ref="audio-screen-resource-allocation"
+								  data-audio-close-selected="resource-alloc-close-selected"></fxs-close-button>
+			</fxs-frame>
+		</fxs-vslot>
+	</div>
+</div>

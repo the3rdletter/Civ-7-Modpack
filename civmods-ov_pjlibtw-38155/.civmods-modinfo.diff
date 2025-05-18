@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -7,12 +7,6 @@
+     <Authors>Ori Vandewalle</Authors>
+     <Package>MOD</Package>
+ 	<AffectsSavedGames>0</AffectsSavedGames>
+-  <!-- Added automatically by CivMods: Do not edit -->
+-  <CivModsCategory>Misc</CivModsCategory>
+-  <CivModsInternalVersionId>5z8ds9xux53pmjb</CivModsInternalVersionId>
+-  <CivModsURL>https://forums.civfanatics.com/resources/people-just-liked-it-better-that-way.32054/</CivModsURL>
+-  <CivModsVersion>1.1</CivModsVersion>
+-  <CivModsVersionDate>2025-03-13T02:11:35.000Z</CivModsVersionDate>
+   </Properties>
+   
+   <Dependencies>

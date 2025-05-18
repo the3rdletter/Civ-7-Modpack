@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="bz-re-sorts" version="20001"
+    xmlns="ModInfo">
+    <Properties>
+        <Name>LOC_MOD_BZ_RE_SORTS_NAME</Name>
+        <Version>2.0.1</Version>
+        <Description>LOC_MOD_BZ_RE_SORTS_DESCRIPTION</Description>
+        <Authors>beezany</Authors>
+        <URL>https://forums.civfanatics.com/resources/resource-re-sorts.32032/</URL>
+        <Package>Mod</Package>
+        <AffectsSavedGames>0</AffectsSavedGames>
+    <!-- Added automatically by CivMods: Do not edit -->
+    <CivModsCategory>UI Mods</CivModsCategory>
+    <CivModsInternalVersionId>7642n2f0y221v67</CivModsInternalVersionId>
+    <CivModsURL>https://forums.civfanatics.com/resources/resource-re-sorts.32032/</CivModsURL>
+    <CivModsVersion>2.0.1</CivModsVersion>
+    <CivModsVersionDate>2025-04-29T15:12:41.000Z</CivModsVersionDate>
+    </Properties>
+    <Dependencies>
+        <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+    </Dependencies>
+    <ActionCriteria>
+        <Criteria id="always">
+            <AlwaysMet/>
+        </Criteria>
+    </ActionCriteria>
+    <ActionGroups>
+        <ActionGroup id="bz-re-sorts-menu" scope="shell" criteria="always">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UIScripts>
+                    <Item>ui/options/bz-re-sorts-options.js</Item>
+                    <Item>ui/options/mod-options-decorator.js</Item>
+                </UIScripts>
+                <UpdateText>
+                    <Item>text/en_us/InGameText.xml</Item>
+                    <Item locale="de_DE">text/de_DE/InGameText.xml</Item>
+                    <Item locale="fr_FR">text/fr_FR/InGameText.xml</Item>
+                    <Item locale="it_IT">text/it_IT/InGameText.xml</Item>
+                    <Item locale="ko_KR">text/ko_KR/InGameText.xml</Item>
+                    <Item locale="zh_Hans_CN">text/zh_Hans_CN/InGameText.xml</Item>
+                    <Item locale="zh_Hant_HK">text/zh_Hant_HK/InGameText.xml</Item>
+                </UpdateText>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="bz-re-sorts-ui" scope="game" criteria="always">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UIScripts>
+                    <Item>ui/options/bz-re-sorts-options.js</Item>
+                    <Item>ui/options/mod-options-decorator.js</Item>
+                    <Item>ui/resource-allocation/bz-model-resource-allocation.js</Item>
+                    <Item>ui/resource-allocation/bz-screen-resource-allocation.js</Item>
+                </UIScripts>
+                <UpdateText>
+                    <Item>text/en_us/InGameText.xml</Item>
+                    <Item locale="de_DE">text/de_DE/InGameText.xml</Item>
+                    <Item locale="fr_FR">text/fr_FR/InGameText.xml</Item>
+                    <Item locale="it_IT">text/it_IT/InGameText.xml</Item>
+                    <Item locale="ko_KR">text/ko_KR/InGameText.xml</Item>
+                    <Item locale="zh_Hans_CN">text/zh_Hans_CN/InGameText.xml</Item>
+                    <Item locale="zh_Hant_HK">text/zh_Hant_HK/InGameText.xml</Item>
+                </UpdateText>
+            </Actions>
+        </ActionGroup>
+    </ActionGroups>
+    <LocalizedText>
+        <File>text/en_us/ModInfoText.xml</File>
+        <File>text/de_DE/ModInfoText.xml</File>
+        <File>text/fr_FR/ModInfoText.xml</File>
+        <File>text/it_IT/ModInfoText.xml</File>
+        <File>text/ko_KR/ModInfoText.xml</File>
+        <File>text/zh_Hans_CN/ModInfoText.xml</File>
+        <File>text/zh_Hant_HK/ModInfoText.xml</File>
+    </LocalizedText>
+</Mod>

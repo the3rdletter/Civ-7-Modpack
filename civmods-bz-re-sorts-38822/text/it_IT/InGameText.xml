@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <LocalizedText>
+        <Row Tag="LOC_OPTIONS_BZ_RE_SORTS_GROUP_BY_TYPE" Language="it_IT">
+            <Text>Riordinamento Risorse • separa città e paesi nella schermata delle risorse</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_BZ_RE_SORTS_GROUP_BY_TYPE_DESCRIPTION" Language="it_IT">
+            <Text>Nella schermata delle risorse, elenca prima la capitale, poi le città e infine i paesi.</Text>
+        </Row>
+        <Replace Tag="LOC_OPTIONS_GROUP_BZ_MODS" Language="it_IT">
+            <Text>mod di Trixie</Text>
+        </Replace>
+    </LocalizedText>
+</Database>
