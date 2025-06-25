@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="tcs-ui-improved-mod-page" version="6"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_MOD_TCS_IMPROVED_MOD_PAGE_NAME</Name>
+		<Description>LOC_MOD_TCS_IMPROVED_MOD_PAGE_DESCRIPTION</Description>
+		<Authors>LOC_MOD_TCS_IMPROVED_MOD_PAGE_AUTHORS</Authors>
+		<SpecialThanks>LOC_MOD_TCS_IMPROVED_MOD_PAGE_THANKS</SpecialThanks>
+		<Compatibility>LOC_MOD_TCS_IMPROVED_MOD_PAGE_COMPATIBILITY</Compatibility>
+		<URL>LOC_MOD_TCS_IMPROVED_MOD_PAGE_URL</URL>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+		<Version>6</Version>
+	<!-- Added automatically by CivMods: Do not edit -->
+	<CivModsCategory>UI Mods</CivModsCategory>
+	<CivModsInternalVersionId>kf05h831gvx1w4u</CivModsInternalVersionId>
+	<CivModsURL>https://forums.civfanatics.com/resources/tcs-improved-mod-page.32024/</CivModsURL>
+	<CivModsVersion>6</CivModsVersion>
+	<CivModsVersionDate>2025-06-23T16:57:18.000Z</CivModsVersionDate>
+	</Properties>
+	<Dependencies>
+	</Dependencies>
+	<References>
+		<Mod id="core" title="LOC_MODULE_CORE_NAME"/>
+	</References>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="shell-tcs-ui-improved-mod-page" scope="shell" criteria="always">
+			<Properties>
+				<LoadOrder>9999</LoadOrder>
+			</Properties>
+			<Actions>
+				<ImportFiles>
+					<Item>ui/shell/mods-content.js</Item>
+					
+					<Item>assets/tcs-ui-accept.png</Item>
+					<Item>assets/tcs-ui-add.png</Item>
+					<Item>assets/tcs-ui-chat.png</Item>
+					<Item>assets/tcs-ui-decline.png</Item>
+					<Item>assets/tcs-ui-forbidden.png</Item>
+					<Item>assets/tcs-ui-internet.png</Item>
+					<Item>assets/tcs-ui-key.png</Item>
+					<Item>assets/tcs-ui-lock.png</Item>
+					<Item>assets/tcs-ui-main-page.png</Item>
+					<Item>assets/tcs-ui-minus.png</Item>
+					<Item>assets/tcs-ui-question.png</Item>
+					<Item>assets/tcs-ui-settings.png</Item>
+					<Item>assets/tcs-ui-smile.png</Item>
+					<Item>assets/tcs-ui-star.png</Item>
+					<Item>assets/tcs-ui-user.png</Item>
+					<Item>assets/tcs-ui-wrench.png</Item>
+					<Item>assets/civmods-logo.png</Item>
+					<Item>assets/steam-logo.png</Item>
+					<Item>assets/tcs-ui-download.png</Item>
+					<Item>assets/tcs-ui-bookmark.png</Item>
+					<Item>assets/tcs-ui-view.png</Item>
+					<Item>assets/tcs-ui-search.png</Item>
+				</ImportFiles>
+				<UpdateIcons>
+					<Item>icons/icons.xml</Item>
+				</UpdateIcons>
+				<UpdateText>
+					<Item>text/en_us/ShellText.xml</Item>
+					<Item locale="pl_PL">text/pl_pl/ShellText.xml</Item>
+					<Item locale="pt_BR">text/pt_br/ShellText.xml</Item>
+					<Item locale="ko_KR">text/ko_kr/ShellText.xml</Item>
+					<Item locale="it_IT">text/it_it/ShellText.xml</Item>
+					<Item locale="ru_RU">text/ru_ru/ShellText.xml</Item>
+					<Item locale="zh_Hans_CN">text/zh_Hans_CN/ShellText.xml</Item>
+					<Item locale="zh_Hant_HK">text/zh_Hant_HK/ShellText.xml</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ShellText.xml</File>
+		<File>text/pl_pl/ShellText.xml</File>
+		<File>text/pt_br/ShellText.xml</File>
+		<File>text/it_it/ShellText.xml</File>
+		<File>text/ko_kr/ShellText.xml</File>
+		<File>text/ru_ru/ShellText.xml</File>
+		<File>text/zh_Hans_CN/ShellText.xml</File>
+		<File>text/zh_Hant_HK/ShellText.xml</File>
+	</LocalizedText>
+</Mod>

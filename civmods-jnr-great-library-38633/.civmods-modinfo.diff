@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -11,12 +11,6 @@
+ 		<ShowInBrowser>1</ShowInBrowser>
+ 		<EnabledByDefault>0</EnabledByDefault>
+ 		<Version>1</Version>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>Misc</CivModsCategory>
+-	<CivModsInternalVersionId>k59cvr438rgt0k5</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/great-library-world-wonder.32182/</CivModsURL>
+-	<CivModsVersion>1</CivModsVersion>
+-	<CivModsVersionDate>2025-04-17T19:40:51.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>

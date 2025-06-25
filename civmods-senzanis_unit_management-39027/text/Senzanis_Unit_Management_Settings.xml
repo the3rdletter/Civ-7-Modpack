@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD">
+			<Text>Senzani's Unit Management</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME">
+			<Text>Use Slider Panel</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC">
+			<Text>Check this to enable panel to become a slider that opens from a tab on the left side of the screen. If unchecked the panel will load by clicking the helmet icon in the top left icon menu.</Text>
+		</Row>
+	</EnglishText>
+	<LocalizedText>
+		<!--Spanish-->
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD" Language="es_ES">
+			<Text>Gestión de la unidad de Senzani</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME" Language="es_ES">
+			<Text>Usar panel deslizante</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC" Language="es_ES">
+			<Text>Marca esta opción para que el panel se convierta en un control deslizante que se abre desde una pestaña en el lado izquierdo de la pantalla. Si no la marcas, el panel se cargará haciendo clic en el icono del casco en el menú de iconos de la esquina superior izquierda.</Text>
+		</Row>
+		<!--Chinese Simplified-->
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD" Language="zh_Hans_CN">
+			<Text>Senzani 的单位管理</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME" Language="zh_Hans_CN">
+			<Text>使用滑块面板</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC" Language="zh_Hans_CN">
+			<Text>勾选此项可使面板变成滑块，并从屏幕左侧的选项卡中打开。如果未勾选，则点击左上角图标菜单中的头盔图标即可加载面板。</Text>
+		</Row>
+		<!--Chinese Traditional-->
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD" Language="zh_Hant_HK">
+			<Text>Senzani 的單位管理</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME" Language="zh_Hant_HK">
+			<Text>使用滑桿面板</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC" Language="zh_Hant_HK">
+			<Text>選取此項目可使面板成為從螢幕左側標籤開啟的滑桿。如果未選中，則透過點擊左上角圖示選單中的頭盔圖示來載入面板。</Text>
+		</Row>
+		<!--Japanese-->
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD" Language="ja_JP">
+			<Text>センザニのユニットマネジメント</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME" Language="ja_JP">
+			<Text>スライダーパネルを使用する</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC" Language="ja_JP">
+			<Text>これにチェックを入れると、パネルが画面左側のタブから開くスライダーになります。チェックを外すと、左上のアイコンメニューにあるヘルメットアイコンをクリックすることでパネルが読み込まれます。</Text>
+		</Row>
+		<!--Korean-->
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD" Language="ko_KR">
+			<Text>센자니의 유닛 관리</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME" Language="ko_KR">
+			<Text>슬라이더 패널 사용</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC" Language="ko_KR">
+			<Text>이 옵션을 선택하면 패널이 화면 왼쪽 탭에서 열리는 슬라이더로 전환됩니다. 이 옵션을 선택하지 않으면 왼쪽 상단 아이콘 메뉴에서 헬멧 아이콘을 클릭하여 패널을 불러옵니다.</Text>
+		</Row>
+		<!--French-->
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD" Language="fr_FR">
+			<Text>Gestion de l'unité Senzani</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME" Language="fr_FR">
+			<Text>Utiliser le panneau coulissant</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC" Language="fr_FR">
+			<Text>Cochez cette case pour que le panneau se transforme en curseur s'ouvrant depuis un onglet situé à gauche de l'écran. Si cette case n'est pas cochée, le panneau se chargera en cliquant sur l'icône en forme de casque dans le menu en haut à gauche.</Text>
+		</Row>
+		<!--Italian-->
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD" Language="it_IT">
+			<Text>Direzione di Unità di Senzani</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME" Language="it_IT">
+			<Text>Utilizza il pannello di scorrimento</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC" Language="it_IT">
+			<Text>Seleziona questa opzione per abilitare il pannello a diventare un cursore che si apre da una scheda sul lato sinistro dello schermo. Se non è selezionata, il pannello verrà caricato cliccando sull'icona del casco nel menu in alto a sinistra.</Text>
+		</Row>
+		<!--Polish-->
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD" Language="pl_PL">
+			<Text>Zarządzanie jednostką Senzani</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME" Language="pl_PL">
+			<Text>Użyj panelu suwaka</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC" Language="pl_PL">
+			<Text>Zaznacz to, aby panel stał się suwakiem otwieranym z zakładki po lewej stronie ekranu. Jeśli odznaczone, panel zostanie załadowany po kliknięciu ikony kasku w menu ikon w lewym górnym rogu.</Text>
+		</Row>
+		<!--Russian-->
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD" Language="ru_RU">
+			<Text>Управление подразделением Senzani</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME" Language="ru_RU">
+			<Text>Использовать панель слайдера</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC" Language="ru_RU">
+			<Text>Установите этот флажок, чтобы панель стала слайдером, который открывается из вкладки на левой стороне экрана. Если этот флажок не установлен, панель будет загружаться при нажатии на значок шлема в верхнем левом меню значков.</Text>
+		</Row>
+		<!--German-->
+		<Row Tag="LOC_OPTIONS_GROUP_SEN_UM_MOD" Language="de_DE">
+			<Text>Senzanis Unit Management</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_NAME" Language="de_DE">
+			<Text>Verwenden Sie das Slider-Panel</Text>
+		</Row>
+		<Row Tag="LOC_SEN_UNIT_MANAGEMENT_USE_SLIDER_BUTTON_DESC" Language="de_DE">
+			<Text>Aktivieren Sie diese Option, um das Panel als Schieberegler zu aktivieren, der über eine Registerkarte auf der linken Bildschirmseite geöffnet wird. Andernfalls wird das Panel durch Klicken auf das Helmsymbol im Symbolmenü oben links geladen.</Text>
+		</Row>
+	</LocalizedText>
+</Database>

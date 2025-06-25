@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -9,12 +9,6 @@
+         <URL>https://forums.civfanatics.com/resources/city-hall.31946/</URL>
+         <Package>Mod</Package>
+         <AffectsSavedGames>0</AffectsSavedGames>
+-    <!-- Added automatically by CivMods: Do not edit -->
+-    <CivModsCategory>UI Mods</CivModsCategory>
+-    <CivModsInternalVersionId>lr7292uowysls24</CivModsInternalVersionId>
+-    <CivModsURL>https://forums.civfanatics.com/resources/city-hall.31946/</CivModsURL>
+-    <CivModsVersion>1.13.0</CivModsVersion>
+-    <CivModsVersionDate>2025-06-23T17:17:45.000Z</CivModsVersionDate>
+     </Properties>
+     <Dependencies>
+         <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />

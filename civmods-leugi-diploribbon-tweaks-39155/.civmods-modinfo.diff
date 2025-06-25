@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -7,12 +7,6 @@
+ 		<Authors>Leugi</Authors>
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>7yq32p12j02xdoa</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/leugis-diplomacy-ribbon-tweaks.32013/</CivModsURL>
+-	<CivModsVersion>13-06-2025</CivModsVersion>
+-	<CivModsVersionDate>2025-06-13T15:11:49.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />

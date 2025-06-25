@@ -1,0 +1,83 @@
+------------------------------------------------------------------
+nasuellia-non-sticky-selection
+---------------------------------------------------
+Version: 0.1
+---------------------------------------------------
+Changes from previous version:
+- This is the very first version of the mod!
+---------------------------------------------------
+Version: 0.2
+---------------------------------------------------
+Changes from previous version:
+- Fixed a huge bug that caused deselection when clicking on user-interface elements
+---------------------------------------------------
+Version: 0.3
+---------------------------------------------------
+Changes from previous version:
+- Fixed the issue that was causing unit de-selection upon camera-panning via mouse-drag
+- Improved underlying logic which was skipping some potentially necessary actions upon deselection
+---------------------------------------------------
+Version: 0.4
+---------------------------------------------------
+Changes from previous version:
+- Fixed an issue that was causing unwanted deselection while in several interface-modes (eg: deploy army)
+- Removed needless imports
+---------------------------------------------------
+Version: 0.5
+---------------------------------------------------
+Changes from previous version:
+- Fixed an issue that was causing unwanted deselection when lingering with a drag
+- Fixed a runtime error that was harmless but had the potential to cause unnecessary computation
+- Restructured code for better performance, maintainability, and issue tracking via logging
+---------------------------------------------------
+Version: 0.6
+---------------------------------------------------
+Changes from previous version:
+- Fixed an issue that was causing some clicks on UI-elements to be skipped
+- Fixed an issue that was causing some clicks on plots (intent to deselect) to not deselect 
+---------------------------------------------------
+Version: 0.7
+---------------------------------------------------
+Changes from previous version:
+- Fixed an issue that was causing poor behavior-recognition in some edge-cases
+- Hugely simplified code which is more robust and extremely lightweight
+---------------------------------------------------
+Version: 0.8
+---------------------------------------------------
+Changes from previous version:
+- Compatible with Civilization 7 patch v1.1
+- Rewrote with a technique which does not replace scripts
+- Better compatibility with other mods
+- Better compatibility with future base game versions
+- Minor fixes and general improvements
+- Removed debug log-lines which might have hampered runtime performance
+---------------------------------------------------
+Version: 0.9
+---------------------------------------------------
+Changes from previous version:
+- Fixed an issue that caused unintentional selection while drag-panning
+- Went back to traditional script-replacing technique
+- Fixed mistaken version number in modinfo file
+- Lowered load order
+- Mod renamed to nasuellia-non-sticky-selection
+---------------------------------------------------
+Version: 0.9.5
+---------------------------------------------------
+Changes from previous version:
+- Bugfix: clicks on most UI elements had issues if the game's resolution was different from the desktop's (a huge thanks to Finwickle for the help in investigating this strange issue!)
+---------------------------------------------------
+Version: 0.9.9
+---------------------------------------------------
+Changes from previous version:
+- Rebased onto Civilization 7 patch v1.2.0
+---------------------------------------------------
+Version: 1.0.0
+---------------------------------------------------
+Changes from previous version:
+- Rebased onto Civilization 7 patch v1.2.1
+---------------------------------------------------
+Version: 1.0.1
+---------------------------------------------------
+Changes from previous version:
+- Rebased onto Civilization 7 patch v1.2.2
+------------------------------------------------------------------

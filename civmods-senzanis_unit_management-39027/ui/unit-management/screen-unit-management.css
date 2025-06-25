@@ -1,0 +1,91 @@
+.unit-management_main-frame {
+	height: 65vh;
+}
+
+.selectedUnitHighlight {
+	background-color: gray;
+	color: azure;
+	border-radius: 5px;
+	border: 2px solid goldenrod;
+}
+
+/* Commander Level Badge */
+.unit-management_main-frame .badge {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-weight: bolder;
+	padding: 3px 7px;
+	text-align: center;
+	border-radius: 50%;
+	/*height: 26px;*/
+}
+
+.unit-management_commander-level,
+.unit-management_religious-charges, 
+.unit-management_civilian-level {
+	font-size: 12px;
+}
+
+/* Icon Inactive State */
+.unit-management_main-frame .inactive {
+	opacity: 0.4;
+}
+
+/* Unit Health Bar */
+.unit-management_unit-health-bar-container {
+}
+
+.unit-management_unit-health-bar-bg {
+	background-color: #1c4212;
+}
+
+.unit-management_unit-health-progress-bar {
+	--health-percentage: 100%;
+	width: var(--health-percentage);
+	background-color: #9bd371;
+}
+
+.unit-management_low-health-bar {
+	background-color: #bb2823;
+}
+
+.unit-management_low-health-bar-bg {
+	background-color: #3a0806;
+}
+
+.unit-management_med-health-bar {
+	background-color: #cea92f;
+}
+
+.unit-management_med-health-bar-bg {
+	background-color: #442c0b;
+}
+
+/*Unit Management Slide Panel*/
+.unit-management_slider .unit-management_slider-panel {
+	position: absolute;
+	transition: 0.3s;
+}
+
+.unit-management_slider-panel-button {
+	height: 110px;
+	width: 50px;
+	position: relative;
+	top: 30vh;
+	color: #FFFFFF;
+	background-color: #000000;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 1px solid gold;
+	border-left: 0px none;
+	opacity: 0.75;
+}
+
+.unit-management_slider-panel-button-image {
+	position: relative;
+	top: 35px;
+	left: 7px;
+	height: 36px;
+	width: 36px;
+}
+
