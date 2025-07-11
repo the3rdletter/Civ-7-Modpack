@@ -11,11 +11,11 @@ const cdBetterPauseMenuInit = () => {
     ScreenPauseMenu.prototype.onAttach = function (...args) {
         sourceOnAttach.apply(this, args);
 
-		const headerTopFilagree = this.Root.querySelector(".pause-menu__header-top-filagree");
+		const headerTopFilagree = this.Root.querySelector(".pause-menu__header-top-filigree");
 		headerTopFilagree.classList.remove('-mt-6');
 		headerTopFilagree.classList.add('-mt-12');
 
-		const headerBottomFilagreeContainer = this.Root.querySelector(".pause-menu__header-bottom-filagree");
+		const headerBottomFilagreeContainer = this.Root.querySelector(".pause-menu__header-bottom-filigree");
 		headerBottomFilagreeContainer.classList.remove('mb-12');
 		headerBottomFilagreeContainer.classList.add('mb-6');
 
@@ -116,10 +116,13 @@ const cdBetterPauseMenuInit = () => {
         if (this.endGameButton) {
             rows.item(2).insertAdjacentElement('beforebegin', this.endGameButton);
         }
-        if (Game.age != Game.getHash("AGE_ANTIQUITY") && !Configuration.getGame().isNetworkMultiplayer) {
+        /*
+        // TODO - Fix Advanced Start logic
+        if (!Players.get(GameContext.localPlayerID).AdvancedStart && Game.age != Game.getHash("AGE_ANTIQUITY") && !Configuration.getGame().isNetworkMultiplayer) {
             this.codeOrRestartButton.classList.add("hidden"); // Useless after Antiquity
         }
-
+        */
+        
         // Rearrange the third row:
         rows.item(3).insertAdjacentElement('beforebegin', this.exitToMainMenuButton);
         if (this.exitToMainMenuButton && this.exitToDesktopButton) { // Shouldn't need to check for exitToMainMenuButton since it should always be added but just in case

@@ -63,7 +63,7 @@ class LeaderModelManagerClass {
         this.leader3DMarkerLeft = null;
         this.leader3DMarkerRight = null;
         this.leader3DRevealFlagMarker = null;
-        this.leader3DMarkerRight = null;
+        this.leader3DMarkerCenter = null;
         this.leftAnimState = "";
         this.rightAnimState = "";
         this.declareWarCameraActive = false;
@@ -84,8 +84,7 @@ class LeaderModelManagerClass {
         this.leaderModelGroup = WorldUI.createModelGroup("leaderModelGroup");
         engine.on('ModelTrigger', (id, hash) => { this.handleTriggerCallback(id, hash); });
         engine.on('ForegroundCameraAnimationComplete', (id) => { this.handleForegroundCameraAnimationComplete(id); });
-        this.leader3DMarkerRight = WorldUI.createFixedMarker({ x: 0, y: 0, z: 0 });
-		
+        this.leader3DMarkerCenter = WorldUI.createFixedMarker({ x: 0, y: 0, z: 0 });
     }
     getIndLeaderAssetName(IndPlayer) {
         let indCivType = "DEFAULT";
@@ -97,8 +96,6 @@ class LeaderModelManagerClass {
         });
         return "LEADER_INDEPENDENT_" + indCivType;
     }
-    // @ts-ignore
-    // TODO: use or remove
     getIndLeaderBGAssetName(IndPlayer) {
         let indCivType = "DEFAULT";
         GameInfo.Independents.forEach(indDef => {
@@ -207,15 +204,14 @@ class LeaderModelManagerClass {
     // ------------------------------------------------------------------------
     // show some of the boilerplate assets that's required for any leader scene
     showDiplomaticSceneEnvironment(offset = { x: 0, y: 0, z: 0 }) {
-        if (this.leader3DMarkerRight != null) {
+        if (this.leader3DMarkerCenter != null) {
             const vignetteOffset = {
                 x: LeaderModelManagerClass.DARKENING_VFX_POSITION.x + offset.x,
                 y: LeaderModelManagerClass.DARKENING_VFX_POSITION.y + offset.y,
                 z: LeaderModelManagerClass.DARKENING_VFX_POSITION.z + offset.z
             };
-            this.leaderModelGroup.addModel(LeaderModelManagerClass.SCREEN_DARKENING_ASSET_NAME, { marker: this.leader3DMarkerRight, offset: vignetteOffset }, { angle: 0, scale: 1, foreground: true });
-            this.leaderModelGroup.addModel("Diplomatic_Scene_Bounds_Marker", { marker: this.leader3DMarkerRight, offset: { x: 0, y: 20, z: 0 } }, { angle: 0, scale: 1, foreground: true });
-			
+            this.leaderModelGroup.addModel(LeaderModelManagerClass.SCREEN_DARKENING_ASSET_NAME, { marker: this.leader3DMarkerCenter, offset: vignetteOffset }, { angle: 0, scale: 1, foreground: true });
+            this.leaderModelGroup.addModel("Diplomatic_Scene_Bounds_Marker", { marker: this.leader3DMarkerCenter, offset: { x: 0, y: 20, z: 0 } }, { angle: 0, scale: 1, foreground: true });
         }
     }
     // ------------------------------------------------------------------------
@@ -266,18 +262,13 @@ class LeaderModelManagerClass {
         this.leader3DMarkerLeft = WorldUI.createFixedMarker({ x: 0, y: 0, z: 0 });
         if (this.leader3DMarkerLeft != null) {
             this.leaderModelGroup.addModel(this.getRightLightingAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true });
-            this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader1.LeaderType.toString()), { marker: this.leader3DMarkerLeft, offset: { x: -100, y: 0, z: 0 } }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+            this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader1.LeaderType.toString()), { marker: this.leader3DMarkerLeft, offset: { x: -100, y: 0, z: 0 } }, { angle: 0, scale: 1, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             if (this.leader3DModelLeft == null) {
-                this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+                this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_MODEL_POSITION }, { angle: 0, scale: 1, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             }
-            this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
+            this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
             if (this.leader3DBannerLeft == null) {
-                this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
-            }			
-
-			this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
-            if (this.leader3DBannerRight == null) {
-                this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
+                this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             }
         }
 
@@ -285,9 +276,13 @@ class LeaderModelManagerClass {
         this.leader3DMarkerRight = WorldUI.createFixedMarker({ x: 0, y: 0, z: 0 });
         if (this.leader3DMarkerRight != null) {
 			this.leaderModelGroup.addModel(this.getRightLightingAssetName(), { marker: this.leader3DMarkerRight, offset: { x: 3, y: 77, z: -12.5 } }, { angle: 75, scale: 1, foreground: true });
-			this.leader3DModelRight = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader2.LeaderType.toString()), { marker: this.leader3DMarkerRight, offset: { x: 0, y: 72, z: -13.25 } }, { angle: 75, scale: 1.05, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+			this.leader3DModelRight = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader2.LeaderType.toString()), { marker: this.leader3DMarkerRight, offset: { x: 0, y: 72, z: -13.25 } }, { angle: 75, scale: 1.05, initialState: "IDLE_WaitingOther", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             if (this.leader3DModelRight == null) {
-                this.leader3DModelRight = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+                this.leader3DModelRight = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_MODEL_POSITION }, { angle: 0, scale: 1, initialState: "IDLE_WaitingOther", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+            }
+            this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
+            if (this.leader3DBannerRight == null) {
+                this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
             }
         }
 		// LOOGIE CHANGES END
@@ -415,6 +410,7 @@ class LeaderModelManagerClass {
             if (this.leader3DModelRight == null) {
                 this.leader3DModelRight = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_MODEL_POSITION }, { angle: 0, scale: 1, initialState: "IDLE", foreground: true, triggerCallbacks: true });
             }
+            this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getIndLeaderBGAssetName(player2), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_INDEPENDENT_MODEL_POSITION }, { angle: LeaderModelManagerClass.RIGHT_INDEPENDENT_MODEL_ANGLE, scale: LeaderModelManagerClass.RIGHT_INDEPENDENT_MODEL_SCALE, initialState: "IDLE", foreground: true, triggerCallbacks: true, seed: Database.makeHash(player2.civilizationFullName), selectionScriptParams: { player: playerID } });
             this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getIndBannerAssetName(player2), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_INDEPENDENT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
             if (this.leader3DBannerRight == null) {
                 this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_INDEPENDENT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
@@ -724,14 +720,8 @@ class LeaderModelManagerClass {
             this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
             if (this.leader3DBannerLeft == null) {
                 this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
-            }			
-
-			this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
-            if (this.leader3DBannerRight == null) {
-                this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
-            }
+            }	
         }
-
         // Player 2 (right)
         this.leader3DMarkerRight = WorldUI.createFixedMarker({ x: 0, y: 0, z: 0 });
         if (this.leader3DMarkerRight != null) {
@@ -739,6 +729,10 @@ class LeaderModelManagerClass {
 			this.leader3DModelRight = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader2.LeaderType.toString()), { marker: this.leader3DMarkerRight, offset: { x: 0, y: 72, z: -13.25 } }, { angle: 75, scale: 1.05, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             if (this.leader3DModelRight == null) {
                 this.leader3DModelRight = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+            }
+            	this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
+            if (this.leader3DBannerRight == null) {
+                this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
             }
         }
 		// LOOGIE CHANGES END
@@ -863,13 +857,7 @@ class LeaderModelManagerClass {
             if (this.leader3DBannerLeft == null) {
                 this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             }			
-
-			this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
-            if (this.leader3DBannerRight == null) {
-                this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
-            }
         }
-
         // Player 2 (right)
         this.leader3DMarkerRight = WorldUI.createFixedMarker({ x: 0, y: 0, z: 0 });
         if (this.leader3DMarkerRight != null) {
@@ -878,9 +866,12 @@ class LeaderModelManagerClass {
             if (this.leader3DModelRight == null) {
                 this.leader3DModelRight = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             }
+        	    this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
+            if (this.leader3DBannerRight == null) {
+                this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
+            }
         }
 		// LOOGIE CHANGES END
-		
         this.showDiplomaticSceneEnvironment();
         this.simpleLeaderPopUpCameraAnimation(false, 0);
         this.beginDeclareWarPlayerSequence();
@@ -996,21 +987,15 @@ class LeaderModelManagerClass {
         this.leader3DMarkerLeft = WorldUI.createFixedMarker({ x: 0, y: 0, z: 0 });
         if (this.leader3DMarkerLeft != null) {
             this.leaderModelGroup.addModel(this.getRightLightingAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true });
-            this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader1.LeaderType.toString()), { marker: this.leader3DMarkerLeft, offset: { x: -100, y: 0, z: 0 } }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+            this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader1.LeaderType.toString()), { marker: this.leader3DMarkerLeft, offset: { x: -100, y: 0, z: 0 } }, { angle: 0, scale: 1, initialState: "IDLE_HappyPlayer", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             if (this.leader3DModelLeft == null) {
-                this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+                this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_MODEL_POSITION }, { angle: 0, scale: 1, initialState: "IDLE_HappyPlayer", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             }
-            this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
+            this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
             if (this.leader3DBannerLeft == null) {
-                this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+                this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             }			
-
-			this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
-            if (this.leader3DBannerRight == null) {
-                this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
-            }
         }
-
         // Player 2 (right)
         this.leader3DMarkerRight = WorldUI.createFixedMarker({ x: 0, y: 0, z: 0 });
         if (this.leader3DMarkerRight != null) {
@@ -1018,6 +1003,10 @@ class LeaderModelManagerClass {
 			this.leader3DModelRight = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader2.LeaderType.toString()), { marker: this.leader3DMarkerRight, offset: { x: 0, y: 72, z: -13.25 } }, { angle: 75, scale: 1.05, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             if (this.leader3DModelRight == null) {
                 this.leader3DModelRight = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+            }
+            	this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
+            if (this.leader3DBannerRight == null) {
+                this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
             }
         }
 		// LOOGIE CHANGES END
@@ -1114,21 +1103,15 @@ class LeaderModelManagerClass {
         this.leader3DMarkerLeft = WorldUI.createFixedMarker({ x: 0, y: 0, z: 0 });
         if (this.leader3DMarkerLeft != null) {
             this.leaderModelGroup.addModel(this.getRightLightingAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true });
-            this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader1.LeaderType.toString()), { marker: this.leader3DMarkerLeft, offset: { x: -100, y: 0, z: 0 } }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+            this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader1.LeaderType.toString()), { marker: this.leader3DMarkerLeft, offset: { x: -100, y: 0, z: 0 } }, { angle: 0, scale: 1, initialState: "IDLE_HappyPlayer", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             if (this.leader3DModelLeft == null) {
-                this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+                this.leader3DModelLeft = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_MODEL_POSITION }, { angle: 0, scale: 1, initialState: "IDLE_HappyPlayer", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             }
-            this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
+            this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
             if (this.leader3DBannerLeft == null) {
-                this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+                this.leader3DBannerLeft = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.LEFT_BANNER_POSITION }, { angle: LeaderModelManagerClass.LEFT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             }			
-
-			this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
-            if (this.leader3DBannerRight == null) {
-                this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerLeft, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
-            }
         }
-
         // Player 2 (right)
         this.leader3DMarkerRight = WorldUI.createFixedMarker({ x: 0, y: 0, z: 0 });
         if (this.leader3DMarkerRight != null) {
@@ -1136,6 +1119,10 @@ class LeaderModelManagerClass {
 			this.leader3DModelRight = this.leaderModelGroup.addModel(this.getLeaderAssetName(leader2.LeaderType.toString()), { marker: this.leader3DMarkerRight, offset: { x: 0, y: 72, z: -13.25 } }, { angle: 75, scale: 1.05, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
             if (this.leader3DModelRight == null) {
                 this.leader3DModelRight = this.leaderModelGroup.addModel(this.getFallbackAssetName(), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_MODEL_POSITION }, { angle: 0, scale: 1, foreground: true, tintColor1: p1ColorPrimary, tintColor2: p1ColorSecondary, triggerCallbacks: true });
+            }
+			this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getCivBannerName(civ2.CivilizationType.toString()), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
+            if (this.leader3DBannerRight == null) {
+                this.leader3DBannerRight = this.leaderModelGroup.addModel(this.getFallbackBannerAssetName(), { marker: this.leader3DMarkerRight, offset: LeaderModelManagerClass.RIGHT_BANNER_POSITION }, { angle: LeaderModelManagerClass.RIGHT_BANNER_ANGLE, scale: LeaderModelManagerClass.BANNER_SCALE, initialState: "IDLE_ListeningPlayer", foreground: true, tintColor1: p2ColorPrimary, tintColor2: p2ColorSecondary, triggerCallbacks: true });
             }
         }
 		// LOOGIE CHANGES END

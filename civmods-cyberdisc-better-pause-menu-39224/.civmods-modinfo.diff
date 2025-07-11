@@ -6,10 +6,10 @@
  		<AffectsSavedGames>0</AffectsSavedGames>
 -	<!-- Added automatically by CivMods: Do not edit -->
 -	<CivModsCategory>UI Mods</CivModsCategory>
--	<CivModsInternalVersionId>9y0m1601k1vp30o</CivModsInternalVersionId>
--	<CivModsURL>https://forums.civfanatics.com/resources/immersive-diplomacy-screen.31919/</CivModsURL>
--	<CivModsVersion>1.3</CivModsVersion>
--	<CivModsVersionDate>2025-03-04T23:18:33.000Z</CivModsVersionDate>
+-	<CivModsInternalVersionId>3gb79443u4e34sa</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/better-pause-menu.31873/</CivModsURL>
+-	<CivModsVersion>5</CivModsVersion>
+-	<CivModsVersionDate>2025-06-26T23:28:27.000Z</CivModsVersionDate>
  	</Properties>
  	<Dependencies>
  		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
