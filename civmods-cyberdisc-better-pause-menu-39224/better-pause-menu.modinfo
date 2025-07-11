@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="cyberdisc-better-pause-menu" version="4"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_BETTER_PAUSE_MENU_NAME</Name>
+		<Description>LOC_BETTER_PAUSE_MENU_DESCRIPTION</Description>
+		<Authors>Cyberdisc</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	<!-- Added automatically by CivMods: Do not edit -->
+	<CivModsCategory>UI Mods</CivModsCategory>
+	<CivModsInternalVersionId>3gb79443u4e34sa</CivModsInternalVersionId>
+	<CivModsURL>https://forums.civfanatics.com/resources/better-pause-menu.31873/</CivModsURL>
+	<CivModsVersion>5</CivModsVersion>
+	<CivModsVersionDate>2025-06-26T23:28:27.000Z</CivModsVersionDate>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="better-pause-menu" scope="game" criteria="always">
+			<Actions>
+				<UIScripts>
+					<Item>ui/pause-menu/cd-better-pause-menu.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ModuleText.xml</File>
+	</LocalizedText>
+</Mod>

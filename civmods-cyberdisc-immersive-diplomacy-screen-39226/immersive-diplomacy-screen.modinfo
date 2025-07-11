@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="cyberdisc-immersive-diplomacy-screen" version="2"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_IMMERSIVE_DIPLOMACY_SCREEN_NAME</Name>
+		<Description>LOC_IMMERSIVE_DIPLOMACY_SCREEN_DESCRIPTION</Description>
+		<Authors>Cyberdisc</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	<!-- Added automatically by CivMods: Do not edit -->
+	<CivModsCategory>UI Mods</CivModsCategory>
+	<CivModsInternalVersionId>121jvo81ajryi91</CivModsInternalVersionId>
+	<CivModsURL>https://forums.civfanatics.com/resources/immersive-diplomacy-screen.31919/</CivModsURL>
+	<CivModsVersion>2</CivModsVersion>
+	<CivModsVersionDate>2025-06-26T23:30:53.000Z</CivModsVersionDate>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="immersive-diplomacy-screen" scope="game" criteria="always">
+			<Actions>
+				<ImportFiles>
+					<Item>ui/diplomacy/leader-model-manager.js</Item>
+				</ImportFiles>
+				<ReplaceUIScript>
+					<Item>ui/diplomacy/leader-model-manager.js</Item>
+				</ReplaceUIScript>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ModuleText.xml</File>
+	</LocalizedText>
+</Mod>

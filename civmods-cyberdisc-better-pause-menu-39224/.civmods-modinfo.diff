@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -7,12 +7,6 @@
+ 		<Authors>Cyberdisc</Authors>
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>3gb79443u4e34sa</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/better-pause-menu.31873/</CivModsURL>
+-	<CivModsVersion>5</CivModsVersion>
+-	<CivModsVersionDate>2025-06-26T23:28:27.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
