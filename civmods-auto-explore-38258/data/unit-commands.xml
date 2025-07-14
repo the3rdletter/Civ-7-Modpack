@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Database>
-    <UnitOperations>
-		    <Row OperationType="C_UNITCOMMAND_AUTO_EXPLORE" RequiresAbility="false" VisibleInUI="true" HoldCycling="false" CategoryInUI="ACTIVE_PRIMARY" PriorityInUI="10" Icon="fs://game/auto-explore/simple_compass2.png" Name="LOC_C_UNITOPERATION_AUTO_EXPLORE_NAME" Description="LOC_C_UNITOPERATION_AUTO_EXPLORE_DESCRIPTION"/>
-            <Row OperationType="C_UNITCOMMAND_STOP_AUTO_EXPLORE" RequiresAbility="false" VisibleInUI="true" HoldCycling="false" CategoryInUI="ACTIVE_PRIMARY" PriorityInUI="10" Icon="fs://game/auto-explore/simple_compass2.png" Name="LOC_C_UNITOPERATION_STOP_AUTO_EXPLORE_NAME" Description="LOC_C_UNITOPERATION_STOP_AUTO_EXPLORE_DESCRIPTION"/>
-    </UnitOperations>
-</Database>
