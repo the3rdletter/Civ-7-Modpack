@@ -1,0 +1,28 @@
+--- original
++++ modified
+@@ -6,12 +6,6 @@
+         <Authors>Chrispresso</Authors>
+         <Package>Mod</Package>
+         <SortIndex>1000</SortIndex>
+-    <!-- Added automatically by CivMods: Do not edit -->
+-    <CivModsCategory>Units</CivModsCategory>
+-    <CivModsInternalVersionId>9898p0u5a2d6507</CivModsInternalVersionId>
+-    <CivModsURL>https://forums.civfanatics.com/resources/auto-exploration.32084/</CivModsURL>
+-    <CivModsVersion>0.9.1</CivModsVersion>
+-    <CivModsVersionDate>2025-03-18T03:25:50.000Z</CivModsVersionDate>
+     </Properties>
+     <Dependencies>
+         <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+@@ -51,8 +45,8 @@
+                     <Item>data/unit-commands.xml</Item>
+                 </UpdateDatabase>
+             </Actions>
+-    </ActionGroup>
++    </ActionGroups>
+     <LocalizedText>
+         <File>text/en_us/ae.xml</File>
+     </LocalizedText>
+-</ActionGroups>
+\ No newline at end of file
++</Mod>
+\ No newline at end of file

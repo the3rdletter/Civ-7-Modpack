@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="multiplayer-cinematics-and-pop-ups" version="1"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>Multiplayer Cinematics & Pop-Ups</Name>
+		<Description>Re-enables all cinematics and pop-ups for multiplayer.</Description>
+		<Authors>p0kiehl</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	<!-- Added automatically by CivMods: Do not edit -->
+	<CivModsCategory>UI Mods</CivModsCategory>
+	<CivModsInternalVersionId>mf6w0yn93ay8ly5</CivModsInternalVersionId>
+	<CivModsURL>https://forums.civfanatics.com/resources/multiplayer-cinematics-pop-ups.31878/</CivModsURL>
+	<CivModsVersion>v3</CivModsVersion>
+	<CivModsVersionDate>2025-03-29T21:30:40.000Z</CivModsVersionDate>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="game-p0k-enable-popups-always" scope="game" criteria="always">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<Actions>
+				<ImportFiles>
+					<Item>ui/cinematic/cinematic-manager.js</Item>
+					<Item>ui/tech-civic-complete/tech-civic-popup-manager.js</Item>
+				</ImportFiles>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+</Mod>

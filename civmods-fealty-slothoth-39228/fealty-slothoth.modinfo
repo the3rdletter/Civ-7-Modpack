@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="fealty-slothoth" version="1.0.1"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>Fealty</Name>
+		<Description>Provides the ability to exchange cities to other players</Description>
+		<Authors>Slothoth</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	<!-- Added automatically by CivMods: Do not edit -->
+	<CivModsCategory>Mod Components</CivModsCategory>
+	<CivModsInternalVersionId>p21rkkdr20r021p</CivModsInternalVersionId>
+	<CivModsURL>https://forums.civfanatics.com/resources/fealty-transfer-settlements-to-allies.32309/</CivModsURL>
+	<CivModsVersion>1.1</CivModsVersion>
+	<CivModsVersionDate>2025-06-27T00:02:23.000Z</CivModsVersionDate>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="game-fealty-always" scope="game" criteria="always">
+			<Properties>
+				<LoadOrder>10</LoadOrder>
+			</Properties>
+			<Actions>
+				<UIScripts>
+					<!--Item>ui/override_diplomanager.js</Item-->
+				</UIScripts>
+				<ImportFiles>
+					<Item>ui/diplomacy-peace-deal/panel-diplomacy-peace-deal.js</Item>
+					<Item>ui/diplomacy/diplomacy-manager.js</Item>
+				</ImportFiles>
+				<UpdateText>
+					<Item>text/Fealty_loc.sql</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+</Mod>

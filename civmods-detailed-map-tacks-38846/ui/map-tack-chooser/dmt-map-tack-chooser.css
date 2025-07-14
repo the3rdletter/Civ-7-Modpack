@@ -1,0 +1,42 @@
+.map-tack-chooser {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    height: 100vh;
+}
+
+.map-tack-chooser.hidden {
+    visibility: hidden;
+}
+
+.map-tack-chooser-panel {
+    position: absolute;
+    display: flex;
+    flex: 1 1 auto;
+    top: 2.6666666667rem;
+    bottom: 0.4444444444rem;
+    pointer-events: auto;
+}
+
+.map-tack-chooser-section-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 23.3333333333rem;
+    margin-left: 0.3333333333rem;
+    margin-right: 0.3333333333rem;
+}
+
+.map-tack-chooser-section {
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map-tack-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+	margin-top: 0.2222222222rem;
+}

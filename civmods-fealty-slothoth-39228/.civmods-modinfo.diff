@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -7,12 +7,6 @@
+ 		<Authors>Slothoth</Authors>
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>Mod Components</CivModsCategory>
+-	<CivModsInternalVersionId>p21rkkdr20r021p</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/fealty-transfer-settlements-to-allies.32309/</CivModsURL>
+-	<CivModsVersion>1.1</CivModsVersion>
+-	<CivModsVersionDate>2025-06-27T00:02:23.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
