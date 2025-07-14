@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -7,12 +7,6 @@
+ 		<Authors>Cyberdisc</Authors>
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>0</AffectsSavedGames>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>9d43j9q1597y1pd</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/better-main-menu.31893/</CivModsURL>
+-	<CivModsVersion>4</CivModsVersion>
+-	<CivModsVersionDate>2025-06-26T23:23:08.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="core" title="LOC_MODULE_CORE_NAME"/>

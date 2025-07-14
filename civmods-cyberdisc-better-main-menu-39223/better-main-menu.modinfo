@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="cyberdisc-better-main-menu" version="4"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_BETTER_MAIN_MENU_NAME</Name>
+		<Description>LOC_BETTER_MAIN_MENU_DESCRIPTION</Description>
+		<Authors>Cyberdisc</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	<!-- Added automatically by CivMods: Do not edit -->
+	<CivModsCategory>UI Mods</CivModsCategory>
+	<CivModsInternalVersionId>9d43j9q1597y1pd</CivModsInternalVersionId>
+	<CivModsURL>https://forums.civfanatics.com/resources/better-main-menu.31893/</CivModsURL>
+	<CivModsVersion>4</CivModsVersion>
+	<CivModsVersionDate>2025-06-26T23:23:08.000Z</CivModsVersionDate>
+	</Properties>
+	<Dependencies>
+		<Mod id="core" title="LOC_MODULE_CORE_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="better-main-menu" scope="shell" criteria="always">
+			<Actions>
+				<ImportFiles>
+					<Item>ui/shell/main-menu/main-menu.html</Item>
+					<Item>ui/shell/extras/screen-extras.html</Item>
+				</ImportFiles>
+				<UIScripts>
+					<Item>ui/shell/main-menu/main-menu.js</Item>
+					<Item>ui/shell/extras/screen-extras.js</Item>
+					<Item>cd-better-main-menu.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ModuleText.xml</File>
+	</LocalizedText>
+</Mod>
