@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="rhq" version="2.07"
+<Mod id="rhq" version="2.10"
 	xmlns="ModInfo">
 	<Properties>
-		<Name>RHQ AI MOD 2.07</Name>
+		<Name>RHQ AI MOD 2.10</Name>
 		<Description>A joint project between RomanHoliday, AndyNemmity that enhances AI behavior, long-term strategy and decision making! Version 2. In Beta Testing.</Description>
 		<Authors>RomanHoliday, AndyNemmity, Slothoth, Desucrate</Authors>
 		<Package>Mod</Package>
@@ -10,10 +10,10 @@
 		<ShowInBrowser>1</ShowInBrowser>
 	<!-- Added automatically by CivMods: Do not edit -->
 	<CivModsCategory>Misc</CivModsCategory>
-	<CivModsInternalVersionId>7b7fa89s9t9sf1q</CivModsInternalVersionId>
+	<CivModsInternalVersionId>rs79o83kv50pmc4</CivModsInternalVersionId>
 	<CivModsURL>https://forums.civfanatics.com/resources/rhq-artificially-intelligent-ai-mod.31881/</CivModsURL>
-	<CivModsVersion>RHQ AI Mod 2.07</CivModsVersion>
-	<CivModsVersionDate>2025-05-02T23:23:14.000Z</CivModsVersionDate>
+	<CivModsVersion>RHQ AI Mod 2.10</CivModsVersion>
+	<CivModsVersionDate>2025-07-23T19:13:14.000Z</CivModsVersionDate>
 	</Properties>
 	<Dependencies>
 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>

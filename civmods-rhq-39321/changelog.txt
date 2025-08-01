@@ -1,4 +1,32 @@
 ------------------------
+RHQ 2.10 Patch Notes
+------------------------
+
+Increase AI settling more
+attempt to fix Independents not attacking aggressively
+lower overall building favorites massively to allow more adjustments.
+
+
+Please provide any feedback, happy to adjust.
+
+------------------------
+RHQ 2.09 Patch Notes
+------------------------
+
+Added new patch wonders for AI
+Brought back building pushes
+Increased AI's flexibility to switch from the build queue
+Increased AI Settling
+
+Please provide any feedback, happy to adjust.
+
+------------------------
+RHQ 2.08 Patch Notes
+------------------------
+
+Steam workshop support
+
+------------------------
 RHQ 2.06 Patch Notes
 ------------------------
 

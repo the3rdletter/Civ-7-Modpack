@@ -75,8 +75,6 @@ WHERE StrategyType = 'LEGACY_PATH_STRATEGY_SCIENCE' AND LegacyPathType = 'LEGACY
 INSERT OR IGNORE INTO StrategyConditions (StrategyType, ConditionFunction, ThresholdValue, StringValue) VALUES 
     ('LEGACY_PATH_STRATEGY_SCIENCE', 'GovernmentMatches', 1, 'GOVERNMENT_DESPOTISM'),
     ('LEGACY_PATH_STRATEGY_SCIENCE', 'NumCities', 5, NULL),
-    ('LEGACY_PATH_STRATEGY_SCIENCE', 'NumCities', 7, NULL),	
-	
     ('LEGACY_PATH_STRATEGY_SCIENCE', 'TopSciencePercent', 50, NULL),
     ('LEGACY_PATH_STRATEGY_SCIENCE', 'NumGreatWorks', 2, NULL),
     ('LEGACY_PATH_STRATEGY_SCIENCE', 'HasLeaderTrait', 1, 'TRAIT_LEADER_ATTRIBUTE_SCIENTIFIC');
@@ -106,7 +104,7 @@ WHERE StrategyType = 'LEGACY_PATH_STRATEGY_EXPANSION' AND LegacyPathType = 'LEGA
 
 INSERT OR IGNORE INTO StrategyConditions (StrategyType, ConditionFunction, ThresholdValue, StringValue) VALUES
     ('LEGACY_PATH_STRATEGY_EXPANSION', 'GovernmentMatches', '1', 'GOVERNMENT_DESPOTISM'),
-    ('LEGACY_PATH_STRATEGY_EXPANSION', 'NumCities', '4', NULL),
+    ('LEGACY_PATH_STRATEGY_EXPANSION', 'NumCities', '3', NULL),
     ('LEGACY_PATH_STRATEGY_EXPANSION', 'NumConqueredCities', '1', NULL),
     ('LEGACY_PATH_STRATEGY_EXPANSION', 'TopMilitaryPercent', '25', NULL),
     ('LEGACY_PATH_STRATEGY_EXPANSION', 'NumCommanders', '2', NULL),
@@ -158,9 +156,9 @@ UPDATE AiFavoredItems -- def 100
 SET Value = 40
 WHERE ListType = 'LegacyPathStrategyImportsBudgetBiases' AND Item = 'AI_BUDGET_GARRISON';
 
-UPDATE AiFavoredItems -- def -50
-SET Value = -50
-WHERE ListType = 'LegacyPathStrategyImportsBudgetBiases' AND Item = 'AI_BUDGET_STANDING_ARMY';
+--UPDATE AiFavoredItems -- def -50
+--SET Value = -50
+--WHERE ListType = 'LegacyPathStrategyImportsBudgetBiases' AND Item = 'AI_BUDGET_STANDING_ARMY';
 
 --
 
@@ -178,7 +176,7 @@ WHERE ListType = 'LegacyPathStrategyImportsPseudoYieldBiases' AND Item = 'PSEUDO
 
 INSERT OR IGNORE INTO AiFavoredItems (ListType, Item, Value) VALUES
 
-    ('LegacyPathStrategyExpansionBudgetBiases', 'AI_BUDGET_EXPANSION', 55); -- Expand Quickly
+    ('LegacyPathStrategyExpansionBudgetBiases', 'AI_BUDGET_EXPANSION', 1000); -- Expand Quickly
 
 
 -- Insert into AiListTypes
@@ -203,7 +201,7 @@ INSERT OR IGNORE INTO AiFavoredItems (ListType, Item,  Value) VALUES
 
 
 UPDATE AiFavoredItems
-SET Value = 75
+SET Value = 1000
 WHERE ListType = 'LegacyPathStrategyExpansionPseudoYieldBiases' AND Item = 'PSEUDOYIELD_NEW_CITY';
 
 

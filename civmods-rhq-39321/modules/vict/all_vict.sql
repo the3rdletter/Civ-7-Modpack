@@ -28,10 +28,10 @@ INSERT OR IGNORE INTO AiFavoredItems(ListType, Item, Value) VALUES
 -- Pseudoyield Bias Adjustments for Aggressive AI
 -- ==========================================================================
 -- These reduce the AI's focus on defensive investments and diplomatic relationships
-INSERT OR IGNORE INTO AiFavoredItems (ListType, Item, Value) VALUES
-    ('RHAI_AGGRESSIVE_PSEUDOYIELDBIASES', 'PSEUDOYIELD_CITY_DEFENSES',               -75), 
-    ('RHAI_AGGRESSIVE_PSEUDOYIELDBIASES', 'PSEUDOYIELD_CITY_GUARDS',                 -80),
-    ('RHAI_AGGRESSIVE_PSEUDOYIELDBIASES', 'PSEUDOYIELD_CITY_GARRISON_COMBAT_VALUE',  -75);
+-- INSERT OR IGNORE INTO AiFavoredItems (ListType, Item, Value) VALUES
+--     ('RHAI_AGGRESSIVE_PSEUDOYIELDBIASES', 'PSEUDOYIELD_CITY_DEFENSES',               -75), 
+--     ('RHAI_AGGRESSIVE_PSEUDOYIELDBIASES', 'PSEUDOYIELD_CITY_GUARDS',                 -80),
+--     ('RHAI_AGGRESSIVE_PSEUDOYIELDBIASES', 'PSEUDOYIELD_CITY_GARRISON_COMBAT_VALUE',  -75);
 
 -- ==========================================================================
 -- Global Diplomatic Relationship Adjustments

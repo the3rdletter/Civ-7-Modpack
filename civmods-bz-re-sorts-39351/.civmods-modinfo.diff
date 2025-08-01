@@ -6,10 +6,10 @@
          <AffectsSavedGames>0</AffectsSavedGames>
 -    <!-- Added automatically by CivMods: Do not edit -->
 -    <CivModsCategory>UI Mods</CivModsCategory>
--    <CivModsInternalVersionId>x19670g0b0oq916</CivModsInternalVersionId>
+-    <CivModsInternalVersionId>5be3px6e62f0c3r</CivModsInternalVersionId>
 -    <CivModsURL>https://forums.civfanatics.com/resources/resource-re-sorts.32032/</CivModsURL>
--    <CivModsVersion>2.2.0</CivModsVersion>
--    <CivModsVersionDate>2025-06-23T17:36:23.000Z</CivModsVersionDate>
+-    <CivModsVersion>2.2.1</CivModsVersion>
+-    <CivModsVersionDate>2025-07-28T18:01:39.000Z</CivModsVersionDate>
      </Properties>
      <Dependencies>
          <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
