@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -11,12 +11,6 @@
+ 		<Compatibility>LOC_MOD_TCS_IMPROVED_PLOT_TOOLTIP_COMPATIBILITY</Compatibility>
+ 		<URL>LOC_MOD_TCS_IMPROVED_PLOT_TOOLTIP_URL</URL>
+ 		<Version>19</Version>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>UI Mods</CivModsCategory>
+-	<CivModsInternalVersionId>yx568im43408889</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/tcs-improved-plot-tooltip.31859/</CivModsURL>
+-	<CivModsVersion>19</CivModsVersion>
+-	<CivModsVersionDate>2025-08-20T03:08:51.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
