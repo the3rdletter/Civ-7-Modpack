@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <LocalizedText>
+        <Replace Tag="LOC_BZ_GROUPED_DIGITS" Language="ko_KR">
+            <Text>{1_amount: number #,###;-#,###}</Text>
+        </Replace>
+        <Replace Tag="LOC_BZ_GROUPED_MODIFIER" Language="ko_KR">
+            <Text>{1_amount: number +#,###;-#,###}</Text>
+        </Replace>
+        <Replace Tag="LOC_BZ_SETTLEMENT_CONNECTIONS" Language="ko_KR">
+            <Text>연결된 정착지</Text>
+        </Replace>
+        <Replace Tag="LOC_BZ_UI_CITY_DETAILS_OVERVIEW_TAB" Language="ko_KR">
+            <Text>개요</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_BZ_CITY_COMPACT" Language="ko_KR">
+            <Text>City Hall • 컴팩트 생산 패널</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_BZ_CITY_COMPACT_DESCRIPTION" Language="ko_KR">
+            <Text>프로덕션 패널의 크기를 줄입니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_OPTIONS_GROUP_BZ_MODS" Language="ko_KR">
+            <Text>trixie의 다양한 모드</Text>
+        </Replace>
+    </LocalizedText>
+</Database>

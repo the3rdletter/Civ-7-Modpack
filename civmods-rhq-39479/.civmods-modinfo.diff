@@ -1,0 +1,15 @@
+--- original
++++ modified
+@@ -8,12 +8,6 @@
+ 		<Package>Mod</Package>
+ 		<AffectsSavedGames>1</AffectsSavedGames>
+ 		<ShowInBrowser>1</ShowInBrowser>
+-	<!-- Added automatically by CivMods: Do not edit -->
+-	<CivModsCategory>Misc</CivModsCategory>
+-	<CivModsInternalVersionId>k8x5824hf61746c</CivModsInternalVersionId>
+-	<CivModsURL>https://forums.civfanatics.com/resources/rhq-artificially-intelligent-ai-mod.31881/</CivModsURL>
+-	<CivModsVersion>RHQ AI Mod 2.11</CivModsVersion>
+-	<CivModsVersionDate>2025-08-29T01:21:11.000Z</CivModsVersionDate>
+ 	</Properties>
+ 	<Dependencies>
+ 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
